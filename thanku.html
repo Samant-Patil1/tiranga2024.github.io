@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you!</title>
+    <link rel="icon" href="./logo.png" />
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;100&display=swap");
+      body {
+        background: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+          url(flagrun.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family: "Roboto";
+        color: rgb(255, 237, 215);
+      }
+      @keyframes starta {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .main {
+        animation: starta 3000ms;
+        margin: auto;
+        width: 85%;
+        position: absolute;
+        top: 21%;
+        left: 7.5%;
+        background-color: transparent;
+        border-radius: 10px;
+        text-align: center;
+        padding: 40px 0;
+        /* box-shadow: 10px 10px 50px rgba(160, 160, 160, 0.384); */
+      }
+
+      .main h1 {
+        font-size: 52px;
+        margin-top: -20px;
+        margin-bottom: 1%;
+      }
+
+      .main h3 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+
+      .main a {
+        font-size: 18px;
+        transition: 0.4s;
+        text-decoration: none;
+        color: rgb(255, 237, 215);
+        border: rgb(255, 237, 215) solid 1px;
+        padding: 9px 20px;
+        border-radius: 22px;
+      }
+
+      .main a:hover {
+        background-color: rgb(255, 237, 215);
+        color: #5b2b0b;
+        transition: 0.4s;
+      }
+      /* #endregion */
+
+      @media (max-width: 700px) {
+        body {
+          background-size: cover;
+        }
+        .main {
+          top: 18vh;
+        }
+
+        .main h1 {
+          font-size: 28px;
+        }
+
+        .main h2 {
+          padding: 10px;
+          margin-right: 5px;
+          margin-left: 5px;
+          font-size: 20px;
+        }
+
+        .main h3 {
+          font-size: 15px;
+        }
+
+        .main a {
+          font-size: 13px;
+        }
+      }
+    </style>
+    <div class="main">
+      <h1>Thank You!</h1>
+      <h3>Your submissions have been recorded!</h3>
+      <a href="">Home</a>
+    </div>
+  </body>
+</html>

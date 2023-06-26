@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@700;100&display=swap');
+*{
+  color: white;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+:root{
+  --brown: #5b1d0b;
+  --darkerbrown: #361106;
+  --scrollbarthumbcolour: rgb(164, 164, 164);
+}
+::-webkit-scrollbar{
+  width: 0px;
+  /* background-color: rgb(255, 237, 215); */
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  background: transparent;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+@keyframes hanimation {
+  from {
+    opacity: 0;
+    transform: translatey(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+@keyframes h3animation{
+  from{
+    opacity: 0;
+    /* transform: translateY(-10px); */
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* #region main heading */
+#navbar{
+  width: 100vw;
+  font-size: 20px;
+  position: sticky;
+display: flex;
+align-items: flex-end;
+}
+#navbarcontent ul {
+  text-decoration: none;
+list-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar content ul a{
+  text-decoration: none;
+}
+.header{
+    font-family: "Roboto";
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("homepage\ 2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.header .text {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+.header .text h1 {
+  color: rgb(255, 237, 215);
+  opacity: 0;
+  font-weight: 600;
+  font-family: cursive;
+  font-size: 4vw;
+  padding-bottom: 32px;
+  transition: 0.1s;
+}
+.header .text h3{
+    margin-bottom: 1px;
+    animation: h3animation 3000ms;
+  color: rgb(255, 237, 215);
+    font-size: 1.6vw;
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-family: cursive;
+}
+.header .text p {
+  padding-bottom: 52px;
+  color: rgb(255, 237, 215);
+  opacity: 0;
+  font-weight: 100;
+  font-size: 1.6vw;
+}
+.header .text a {
+  font-size: 1.6vw;
+  font-family: cursive;
+  transition: 0.4s;
+  text-decoration: none;
+  color: rgb(255, 237, 215);
+  border: rgb(255, 237, 215) solid 1px;
+  opacity: 0;
+  padding: 9px 20px;
+  border-radius: 22px;
+  margin-bottom: 22px;
+}
+.header .text a:hover {
+  background-color: rgb(255, 237, 215);
+  color: #5b2b0b;
+  transition: 0.4s;
+}
+.header img{
+    width: 130px;
+    height: auto;
+    padding: -100px;
+    animation: h3animation 1000ms;
+}
+@media (max-width: 850px){
+  .header{
+    background-size: cover;
+  }
+  .header .text{
+    top: 30%;
+  }
+  .header .text img{
+    width: 50px;
+  }
+  .header .text h1{
+    padding-bottom: 22px;
+    font-size: 28px;
+  }
+  .header .text h3{
+    font-size: 15px;
+  }
+  .header .text a{
+    font-size: 10px;
+  }
+}
+/* #endregion */
+
+/* #region second */
+.litfest{
+  height: 48vw;
+  width: 100%;
+  font-family: "Roboto";
+  display: flex;
+  position: absolute;
+  top: 100vh;
+}
+.textinsecond{
+  margin-top: 3.4vw;
+}
+.textinsecond h1{
+  color: #361106;
+  font-size: 2.4vw;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+.textinsecond p{
+  color: #361106;
+  font-size: 1.7vw;
+  padding-right: 100px;
+  line-height: 2.4vw;
+  font-weight: 100;
+  padding-bottom: 5vw;
+}
+.textinsecond a{
+  font-size: 1.7vw;
+  color: #361106;
+  border: #361106 solid 1px;
+  padding: 9px 20px;
+  border-radius: 22px;
+  text-decoration: none;
+  transition: .4s;
+}
+.textinsecond a:hover{
+  background-color: #361106;
+  transition: .4s;
+  color: rgb(255, 237, 215);
+}
+.wrappper .timer h3{
+  color: rgb(255, 237, 215);
+  font-size: 7vw;
+}
+.litfest .textinsecond{
+  padding-top: 5%;
+  padding-left: 10%;
+}
+.textinsecond .line{
+  width: 3vw;
+  height: 1px;
+  margin: 3.7vw 0;
+  background-color: #361106;
+}
+
+@media (max-width: 800px){
+  .litfest{
+    flex-direction: column;
+    height: 92vh;
+  }
+  .litfest .textinsecond{
+    padding: 0;
+  }
+  .litfest .textinsecond h1{
+    font-size: 25px;
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+  }
+  .litfest .textinsecond p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .litfest .textinsecond a{
+    padding: 0;
+    font-size: 0;
+    opacity: 0;
+  }
+  .litfest .textinsecond .line{
+    margin: 5% auto;
+    height: .6px;
+    width: 40px;
+  }
+  .litfest .countdown{
+    padding: 0;
+    margin: 20px auto;
+  }
+  .litfest .countdown h2{
+    font-size: 20px;
+    width: 76%;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .litfest .countdown .wrappper .timer{
+    width: 112px;
+    height: 100px;
+    /* margin-top: 30px; */
+    margin: 30px 15px;
+  }
+  .wrappper .timer h4{
+    font-size: 20px;
+  }
+  .wrappper .timer h3{
+    font-size: 59px;
+  }
+}
+/* #endregion */
+
+/* #region oldlitfest */
+.oldlitfest{
+  margin-top: 199vh;
+}
+.oldlitfest .textindiv{
+  width: 80%;
+  text-align: center;
+  font-family: "Roboto";
+  margin: 2.4vw auto 0;
+}
+.oldlitfest .textindiv h3{
+  color: #361106;
+  font-size: 2.4vw;
+}
+.oldlitfest .textindiv p{
+  color: #361106;
+  font-size: 1.6vw;
+  padding: 10px 0 0;
+}
+.slider{
+  pointer-events: none;
+  width: 80%;
+  height: 75vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
+  margin: 50px auto 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid rgba(0,0,0,0);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: rgba(0,0,0,0);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid rgba(0,0,0,0);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: rgba(0,0,0,0);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: rgba(0,0,0,0);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: rgba(0,0,0,0);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: rgba(0,0,0,0);
+}
+      
+@media (max-width: 850px){
+  .oldlitfest{
+    margin-top: 190vh;
+  }
+  .oldlitfest .textindiv h3{
+    padding-top: 30px;
+    font-size: 25px;
+  }
+  .oldlitfest .textindiv p{
+    font-size: 15px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .slider{
+    width: 80%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  .slides input{
+    display: none;
+  }
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* #endregion */
+
+/* #region newevents */
+.about {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  font-family: "Roboto";
+}
+.textdown h1{
+  font-size: 45px;
+  color: #361106;
+}
+
+.textdown p{
+  font-size: 25px;
+  font-weight: 250;
+  line-height: 32px;
+  color: #361106;
+  padding: 15px;
+}
+
+.row {
+  height: 500px;
+  width: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col{
+  box-shadow: 0 0 10px #5e5e5e8f;
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.col img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.viewevent{
+  margin-top: 20px;
+  height: 70px;
+  width: 200px;
+  background-color: #361106;
+  font: 600;
+  font-size: 20px;
+  font-family: cursive;
+  text-decoration: none;
+  border-radius: 50px;
+}
+#vieweventbutton{
+  text-align: center;
+  text-decoration: none;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(4, 9, 10, 0.5);
+}
+
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: rgb(255, 237, 215);
+  font-size: 26px;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  padding-bottom: 10px;
+}
+
+.layer:nth-child(2) h3{
+  padding-bottom: -1000px;
+}
+
+.layer p{
+  width: 100%;
+  opacity: 0;
+  font-weight: 400;
+  color: rgb(255, 237, 215);
+  font-size: 16px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  font-size: 18px;
+  padding: 0 20px ;
+}
+
+.layer:hover h3{
+  opacity: 1;
+  bottom: 65%;
+  font-size: 45px;
+}
+
+.layer:hover p{
+  opacity: 1;
+  bottom: 21%;
+}
+@media (max-width: 800px){
+  .about{
+    margin-top: -30px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .textdown h1{
+    font-size: 25px;
+    color: #361106;
+  }
+  .textdown p{
+    font-size: 15px;
+    font-weight: 250;
+    line-height: 19px;
+    color: #361106;
+    padding: 15px;
+  }
+  .layer:hover h3{
+    font-size: 25px;
+  }
+  .layer:hover p{
+    font-size: 15px;
+    bottom: 12%;
+  }
+}
+/* #endregion */
+
+/* #region login */
+.loginforregistrations{
+  font-family: "Roboto";
+  width: 85.2%;
+  margin: 10px auto;
+  background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("../images/bg.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 30px #0000008f;
+  padding: 100px 0;
+}
+.loginforregistrations h1{
+  font-size: 52px;
+  color: rgb(255, 237, 215);
+  margin-bottom: 40px;
+}
+.loginforregistrations a{
+  font-size: 18px;
+  transition: 0.4s;
+  text-decoration: none;
+  color: rgb(255, 237, 215);
+  border: rgb(255, 237, 215) solid 1px;
+  padding: 9px 20px;
+  border-radius: 22px;
+  margin: 20px;
+}
+.loginforregistrations a:hover{
+  background-color: rgb(255, 237, 215);
+  color: #361106;
+  transition: .4s;
+}
+
+@media (max-width: 800px){
+  .loginforregistrations{
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .loginforregistrations h1{
+    font-size: 25px;
+    padding: 0;
+  }
+  .loginforregistrations a{
+    font-size: 12px;
+  }
+}
+/* #endregion */
