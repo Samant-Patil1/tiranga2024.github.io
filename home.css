@@ -485,6 +485,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 #vieweventbutton{
   text-align: center;
   text-decoration: none;
+  transition: .4s;
+}
+.viewevent:hover{
+  background-color: #ffffff;
+  transition: .4s;
+  
+}
+#vieweventbutton:hover{
+color: #361106;
+font-weight: bolder;
 }
 .layer{
   background: transparent;
