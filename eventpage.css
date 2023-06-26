@@ -25,6 +25,9 @@ html{
     position: relative;
   }
   #header{
-    background: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
-          url(ev);
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
+          url(eventpagebackground.jpg);
+          background-size: auto;
   }
