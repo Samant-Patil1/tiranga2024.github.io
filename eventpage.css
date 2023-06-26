@@ -37,4 +37,16 @@ html{
     height: 90px;
     width: auto;
   }
-  
+  #events{
+    height: 50px;
+    width: 100px;
+    background-color: #361106;
+    border-radius: 20px;
+    border-color: aliceblue;
+  }
+  #events a{
+    text-decoration: none;
+    color: aliceblue;
+
+
+  }
