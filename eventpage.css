@@ -29,11 +29,12 @@ html{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
-          url(eventpagebackground.jpg);
-          background-size: 100% 100%;
+          url(Taj-Mahal-Sunrise-Tour-from-Delhi-Featured-Image.jpg);
+          background-size: cover;
 
   }
   #content{
+    z-index: 99;
     padding-top: 180px;
   }
   #logo{
@@ -44,18 +45,30 @@ html{
   }
   #events{
     
-    margin-top: 30px;
-    margin-left: -100px;
-    height: 50px;
-    width: 100px;
-    background-color: #361106;
-    border-radius: 20px;
+    margin-top: 280px;
+    margin-left: -24px;
+    font-size: 20px;
+    /* margin-left: -100px; */
+    height: 70px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 30px;
     border-color: aliceblue;
   }
   #events a{
     text-decoration: none;
     color: aliceblue;
-   
+   transition: .6s;
 
 
+  }
+  #events:hover{
+    transition: .6s;
+    background-color: #09b5e9b4;
+    color: aliceblue;
+  }
+  #events a:hover{
+    transition: .6s;
+    /* background-color: #361106; */
+    color: white;
   }
