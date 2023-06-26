@@ -150,42 +150,6 @@
 		animation: fadeIn 1.4;
 	}
 
-	.label {
-	background: transparent;
-  border: 1px solid #666;
-  color: white;
-  padding: 10px 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 15px 15px;
-  cursor: pointer;
-}
-
-.heading {
-	background: transparent;
-  border: 1px solid #666;
-  color: white;
-  padding: 10px 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 15px 15px;
-  cursor: pointer;
-}
-
-.div1{
-
-	display: inline-block;
-
-}
-.div2{
-
-	display: inline-block;
-
-
-}
-
 
 
 	}
@@ -208,80 +172,33 @@
 			<img src="https://eurolitfest.github.io/Home/images/logo.png" class="logo">
 
 		</div>
+
 		<h1 class="name">EuroSchool HSR</h1>
-
-		<h1 class="name">Events</h1>
-
 
 		<form method="POST" name="google-sheet">
 
-			<div class="div1">
+			<div>
 
-				<h3 class="heading">Category-1 [Nursery, Junior KG, Senior KG]</h3>
+				<input placeholder="School Name" type="Text" 
+				name="School Name" class="School" required>
 
-			  <label class="label"><input type="checkbox" name="Dress up and Talk" class="number" value="Yes">Dress up and Talk</label>
-				<label class="label"><input type="checkbox" name="Colouring" class="number" value="Yes">Colouring</label>
-				<label class="label"><input type="checkbox" name="Flag Run" class="number" value="Yes">Flag Run</label>
+				<input placeholder="Address" type="text" 
+				name="Address" class="Address" required>
+
 
 			</div>
 
-			
-			<div class="div1"></div>
-				<h3 class="heading">Category-2 [Grade 1 And 2]</h3>
+			<div>
+				
+				<input placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required>
+				<input placeholder="AlternateMobile Number" type="tel" name="2nd Mobile Number" class="number">
 
-				<label class="label"><input type="checkbox" name="Category-2 Dress up and Talk" class="number" value="Yes">Dress up and Talk</label>
-				<label class="label"><input type="checkbox" name="Category-2 Colouring" class="number" value="Yes">Colouring</label>
-				<label class="label"><input type="checkbox" name="Category-2 Flag Run" class="number" value="Yes">Flag Run</label>
-				<label class="label"><input type="checkbox" name="Category-2 Poem Recitation" class="number" value="Yes">Poem Recitation </label>
-			<br>
-
-				<h3 class="heading">Category-3 [Grade 3, 4 and 5]</h3>
-				<label class="label"><input type="checkbox" name="Category-3 Drawing and Painting" class="number" value="Yes">Drawing and Painting</label> 
-				<label class="label"><input type="checkbox" name="Category-3 Collage Making" class="number" value="Yes">Collage Making</label>
-				<label class="label"><input type="checkbox" name="Category-3 Best of Waste" class="number" value="Yes">Best of Waste</label>
-				<label class="label"><input type="checkbox" name="Category-3 Monument Pencil Sketching" class="number" value="Yes">Monument Pencil Sketching</label>
-				<label class="label"><input type="checkbox" name="Category-3 Poem Recitation" class="number" value="Yes">Poem Recitation </label>
-
-			<div class="div2">
-
-
-				<h3 class="heading">Category-4 [Grade 6, 7 and 8]</h3>
-				<label class="label"><input type="checkbox" name="Category-4 Group dance -Indian" class="number" value="Yes">Group dance -Indian</label>
-				<label class="label"><input type="checkbox" name="Category-4 Solo-Classical" class="number" value="Yes">Solo-Classical</label>
-				<label class="label"><input type="checkbox" name="Category-4 Group dance-Fusion" class="number" value="Yes">Group dance-Fusion</label>	
-				<label class="label"><input type="checkbox" name="Category-4 Group Song" class="number" value="Yes">Group Song</label>
-				<label class="label"><input type="checkbox" name="Category-4 Live Band" class="number" value="Yes">Live Band</label>
-				<label class="label"><input type="checkbox" name="Category-4 Flower arrangement" class="number" value="Yes">Flower arrangement</label>
-				<label class="label"><input type="checkbox" name="Category-4 Mime" class="number" value="Yes">Mime</label>
-				<label class="label"><input type="checkbox" name="Category-4 Rangoli" class="number" value="Yes">Rangoli</label>
-
-
-				<h3 class="heading">Category-5 [Grade 9, 10, 11 and 12]</h3>
-				<label class="label"><input type="checkbox" name="Category-5 Group dance -Indian" class="number" value="Yes">Group dance -Indian</label>
-				<label class="label"><input type="checkbox" name="Category-5 Solo-Classical" class="number" value="Yes">Solo-Classical</label>
-				<label class="label"><input type="checkbox" name="Category-5 Group dance-Fusion" class="number" value="Yes">Group dance-Fusion</label>	
-				<label class="label"><input type="checkbox" name="Category-5 Group Song" class="number" value="Yes">Group Song</label>
-				<label class="label"><input type="checkbox" name="Category-5 Live Band" class="number" value="Yes">Live Band</label>
-				<label class="label"><input type="checkbox" name="Category-5 Flower arrangement" class="number" value="Yes">Flower arrangement</label>
-				<label class="label"><input type="checkbox" name="Category-5 Mime" class="number" value="Yes">Mime</label>
-				<label class="label"><input type="checkbox" name="Category-5 Rangoli" class="number" value="Yes">Rangoli</label>
-				<label class="label"><input type="checkbox" name="Category-5 Declamation" class="number" value="Yes">Declamation</label>
-				<label class="label"><input type="checkbox" name="Category-5 Elocution" class="number" value="Yes">Elocution</label>
-				<label class="label"><input type="checkbox" name="Category-5 Quiz" class="number" value="Yes">Quiz</label>
-				<label class="label"><input type="checkbox" name="Category-5 Tablaeu" class="number" value="Yes">Tablaeu</label>
-				<label class="label"><input type="checkbox" name="JAM" class="number" value="Yes">JAM</label>
-
-			</div>
-
-
-			 -->
-
-				<!-- <select name="Event" class="Event" >
+				<!--<select name="Event" class="Event" >
   					<option value="Dress up and Talk">Dress up and Talk</option>
   					<option value="Colouring">Colouring</option>
   					<option value="Flag Run">Flag Run</option>
   					<option value="Poem Recitation">Poem Recitation</option>
-  					<option value="Drawing and Painting">Drawing and Painting</option>
+  					<option value="Drawing and Painting">Drawing and Painting< option>
   					<option value="Collage Making">Collage Making</option>
   					<option value="Best of Waste">Best of Waste</option>
   					<option value="Monument Pencil Sketching">Monument Pencil Sketching</option>
@@ -299,7 +216,6 @@
   					<option value="Quiz">Quiz</option>
   					<option value="Tablaeu">Tablaeu</option>
   					<option value="JAM">JAM</option> -->
-  					 -->
 
 					<!-- <select name="1Event" class="Event" >
   					<option value="Dress up and Talk">Dress up and Talk</option>
@@ -425,8 +341,9 @@
 				<input type="checkbox" name="Event" class="number" value="JAM" required>
  -->
 
- 				<!-- <button type="submit"  class="submitbutton" name="submit">Register</button> -->
- 				<button class="submitbutton" name="submit">Register</button>
+ 				<!-- <button   type="submit"  class="submitbutton" name="submit"  >submit</button> -->
+ 				<button class="submitbutton" name="submit"  >continue</button>
+ 				<!-- <button class="submitbutton" name="submit">Register</button> -->
 
 		</form>
 		
@@ -437,12 +354,13 @@
             const scriptURL = 'https://script.google.com/macros/s/AKfycbydZR8oReb66JK_Z6arOBeXaMt5fjd8FZE3iVKKpshAx5Gp25ye6BCj2O80Z46ruB3czQ/exec'
             const form = document.forms['google-sheet']
           
-            form.addEventListener('submit', e => {
+            form.addEventListener ('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => window.location = "file:///C:/Users/Vibeesh/Desktop/reg-events.html")
                 .catch(error => console.error('Error!', error.message))
             })
+            
           </script>
 
 </body>
