@@ -19,6 +19,7 @@ html{
     overflow-x: hidden;
   }
   body{
+    height: 250vh;
     background: transparent;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -32,12 +33,19 @@ html{
           background-size: 100% 100%;
 
   }
+  #content{
+    padding-top: 180px;
+  }
   #logo{
     align-content: center;
     height: 90px;
     width: auto;
+    margin-bottom: 50px;
   }
   #events{
+    
+    margin-top: 30px;
+    margin-left: -100px;
     height: 50px;
     width: 100px;
     background-color: #361106;
@@ -47,6 +55,7 @@ html{
   #events a{
     text-decoration: none;
     color: aliceblue;
+   
 
 
   }
