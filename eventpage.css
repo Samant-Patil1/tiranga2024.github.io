@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@700;100&display=swap');
+*{
+  color: white;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+:root{
+  --brown: #5b1d0b;
+  --darkerbrown: #361106;
+  --scrollbarthumbcolour: rgb(164, 164, 164);
+}
+::-webkit-scrollbar{
+  width: 0px;
+  /* background-color: rgb(255, 237, 215); */
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body{
+    background: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+  }
+  #header{
+    background: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+          url(eurologo.png);
+  }
