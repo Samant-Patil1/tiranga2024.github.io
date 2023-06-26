@@ -29,5 +29,12 @@ html{
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
           url(eventpagebackground.jpg);
-          background-size: auto;
+          background-size: 100% 100%;
+
   }
+  #logo{
+    align-content: center;
+    height: 90px;
+    width: auto;
+  }
+  
