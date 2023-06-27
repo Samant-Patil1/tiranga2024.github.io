@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<style>
+
+@-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            from{
+
+            	transform: translateY(100px);
+
+            }
+
+            to{
+
+            	transform: translateY(0px);
+
+            }
+            100% {opacity: 1;}
+         }
+
+	.page {
+
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-image: url(C:/Users/Vibeesh/Downloads/image1.jpg)
+
+		}
+
+
+	
+	.centre{
+
+		margin-left: 35%;
+		margin-right: 35%;
+		margin-bottom: 200px;
+		display: inline-block;
+		text-align: center;
+		margin-top: 160px;
+		align-items: center;
+		flex-direction: column;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+		animation: fadeIn 3.5s;
+
+
+	}
+
+	.logo{
+
+		height: 100px;
+		width: 100px;
+		margin-top: 25px;
+		animation: fadeIn 2.5s;
+
+	}
+
+	.number{
+
+		height: 20px;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1s;
+
+	}
+
+	.submitbutton{
+
+		margin-top: 20px;
+		margin-bottom: 45px;
+		width: 100px;
+		height: 30px;
+		border: none;
+		border-radius: 15px;
+		color: white;
+		background-color: blue;
+		transition: color 1s, background-color 1s;
+		transition: transform 0.5s;
+		animation: fadeIn 0.5s;
+	}
+
+	.submitbutton:hover{
+		color: blue;
+		background-color: white;
+		cursor: pointer;
+		transform: translateY(-6px);
+	}
+
+	.submitbutton:active{
+		opacity: 0.6;
+	}
+
+	.School{
+		display: inline;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+		.Event{
+		display: inline;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: indianred;
+		animation: fadeIn 1.5s;
+	}
+
+		.Address{
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+	.name{
+		color: #a8d2e7;
+		animation: fadeIn 1.4;
+	}
+
+
+
+	}
+
+</style>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+
+<body class="page">
+
+	<div class="centre">
+
+		<div>
+
+			<img src="https://eurolitfest.github.io/Home/images/logo.png" class="logo">
+
+		</div>
+
+		<h1 class="name">Payment</h1>
+
+		<form method="POST" name="google-sheet">
+
+			<div>
+
+				<input placeholder="Transaction ID" type="Text" name="Transaction ID" class="School" required>
+
+
+			</div>
+
+			<div>
+				
+
+ 				<button class="submitbutton" name="submit" type="submit">Register</button>
+
+
+		</form>
+		
+	</div>
+
+
+	<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbydZR8oReb66JK_Z6arOBeXaMt5fjd8FZE3iVKKpshAx5Gp25ye6BCj2O80Z46ruB3czQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener ('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => window.location = "https://eshsrtiranga.github.io/reg-events.html")
+                .catch(error => console.error('Error!', error.message))
+            })
+            
+          </script>
+
+</body>
+
+</html>
