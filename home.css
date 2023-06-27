@@ -181,7 +181,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-family: "Roboto";
 }
 .textinsecond p{
-  color: #361106;
+  color: #000000;
   font-size: 1.7vw;
   padding-right: 100px;
   line-height: 2.4vw;
@@ -190,8 +190,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .textinsecond a{
   font-size: 1.7vw;
-  color: #361106;
-  border: #361106 solid 1px;
+  color: #000000;
+  border: #000000 solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
   text-decoration: none;
