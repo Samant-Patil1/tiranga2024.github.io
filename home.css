@@ -101,7 +101,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header .text h3{
     margin-bottom: 1px;
-    animation: h3animation 3000ms;
   color: rgb(255, 237, 215);
     font-size: 1.6vw;
     padding-bottom: 10px;
