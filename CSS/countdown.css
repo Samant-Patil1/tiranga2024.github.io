@@ -1,3 +1,8 @@
+@font-face{
+  font-family:P-Light;
+  src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,6 +12,7 @@
   body {
     background-color: rgb(180, 147, 107) ;
     color: rgb(255, 237, 215);
+      font-family: P-Light;
     
   }
   

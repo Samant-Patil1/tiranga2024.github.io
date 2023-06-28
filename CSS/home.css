@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@700;100&display=swap');
+@font-face{
+  font-family:P-Light;
+  src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+}
+
 *{
   color: white;
   margin: 0;
@@ -23,6 +27,7 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
+  font-family: P-Light;
 }
 @keyframes hanimation {
   from {
@@ -66,7 +71,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: "cursive";
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("homepage\ 2.png");
+    background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/homepage2.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -597,7 +602,7 @@ font-weight: bolder;
   font-family: "Roboto";
   width: 85.2%;
   margin: 10px auto;
-  background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("../images/bg.png");
+  background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/bg.png");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

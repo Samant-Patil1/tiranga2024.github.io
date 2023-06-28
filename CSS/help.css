@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@700;100&display=swap');
+@font-face{
+  font-family:P-Light;
+  src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+}
 
-
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
             0% {opacity: 0;}
             from{
 
@@ -30,10 +32,11 @@
 }
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
   background-color: rgb(255, 237, 215);
   max-width: 100%;
   overflow-x: hidden;
+  font-family: P-Light;
 }
 
 /* Start Animation */
@@ -78,7 +81,7 @@ h1,
   transition: 0.4s;
   text-decoration: none;
   color: black;
-  border: green; solid 1px;
+  border: green solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
 
