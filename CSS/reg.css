@@ -1,0 +1,165 @@
+@font-face{
+    font-family:P-Light;
+    src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+  }
+
+
+@keyframes fadeIn {
+            0% {opacity: 0;}
+            from{
+
+            	transform: translateY(100px);
+
+            }
+
+            to{
+
+            	transform: translateY(0px);
+
+            }
+            100% {opacity: 1;}
+         }
+
+	.page {
+
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-image: url("https://eshsrtiranga.github.io/Resources/Images/image1.jpg")
+			
+
+		}
+
+
+body{
+    font-family: P-Light;
+    background-color: black;
+}
+
+input{
+    background-color: white;
+}
+
+	
+	.centre{
+
+		margin-left: 35%;
+		margin-right: 35%;
+		margin-bottom: 200px;
+		display: inline-block;
+		text-align: center;
+		margin-top: 160px;
+		align-items: center;
+		flex-direction: column;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+		animation: fadeIn 3.5s;
+
+
+	}
+
+	.logo{
+
+		height: 100px;
+		width: 100px;
+		margin-top: 25px;
+		animation: fadeIn 2.5s;
+
+	}
+
+	.number{
+
+		height: 20px;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1s;
+
+	}
+
+	.submitbutton{
+		margin-top: 30px;
+        margin-bottom: 45px;
+        padding: 10px;
+        padding-bottom:22px;
+        width: 80px;
+        height: 35px;
+        border: none;
+        border-radius: 100px;
+        color: white;
+        background-color: #004d93;
+        animation: fadeIn 0.5s;
+        transition: color 1s, background-color 1s;
+        transition: all 0.5s;
+	}
+
+	.submitbutton:hover{
+		color: #2759BE;
+		background-color: white;
+		cursor: pointer;
+		transform: translateY(-6px);
+	}
+
+	.submitbutton:active{
+		opacity: 0.6;
+	}
+
+	.School{
+		display: inline;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+		.Event{
+		display: inline;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: indianred;
+		animation: fadeIn 1.5s;
+	}
+
+		.Address{
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 60px;
+		margin-right: 60px;
+		width: 200px;
+		outline: none;
+		border-radius: 40px;
+		background: transparent;
+		padding: 10px;
+		font-size: 13px;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+	.name{
+		color: #2759BE;
+		font-family: P-Light;
+		animation: fadeIn 1.4;
+	}
