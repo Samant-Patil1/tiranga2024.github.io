@@ -1,102 +1,115 @@
-@font-face{
-  font-family:P-Light;
+@font-face {
+  font-family: P-Light;
   src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
 }
 
 
-*{
+* {
   color: white;
   margin: 0;
   padding: 0;
   user-select: none;
 }
-:root{
+
+:root {
   --brown: #5b1d0b;
   --darkerbrown: #361106;
   --scrollbarthumbcolour: rgb(164, 164, 164);
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 0px;
   /* background-color: rgb(255, 237, 215); */
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  body{
-    height: 250vh;
-    background: transparent;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    position: relative;
-    font-family: P-Light;
-  }
 
-  .event {
-    text-align: left;
-    display: inline-block;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  align-items: center;
+}
 
-  #header{
+body {
+  height: 250vh;
+  background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
+    url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
+  background-size: 100% 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  font-family: P-Light;
+}
+
+.eventtitle {
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/*#header{
     height: 110vh;
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
           url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
           background-size: 100% 100%;
 
-  }
-  #content{
-    z-index: 99;
-    padding-top: 180px;
-  }
-  #logo{
-    align-content: center;
-    height: 120px;
-    width: auto;
-    margin-left: 50px;
-    
-  }
-  #events{
-    
-    margin-top: 280px;
-    
-    font-size: 20px;
-    /* margin-left: -100px; */
-    height: 70px;
-    width: 150px;
-    background-color: transparent;
-    border-radius: 30px;
-    border-color: aliceblue;
-  }
-  #events a{
-    text-decoration: none;
-    color: aliceblue;
-   transition: .6s;
+  }*/
+#content {
+  z-index: 99;
+  padding-top: 180px;
+}
+
+#logo {
+  align-content: center;
+  height: 120px;
+  width: auto;
+  margin-left: 50px;
+
+}
+
+#events {
+
+  margin-top: 180px;
+  margin-bottom: 50px;
+  float: center;
+  font-size: 20px;
+  height: 70px;
+  width: 150px;
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: aliceblue;
+}
+
+#events a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: .6s;
 
 
-  }
-  #events:hover{
-    transition: .6s;
-    background-color: #09b5e9b4;
-    color: aliceblue;
-  }
-  #events a:hover{
-    transition: .6s;
-    /* background-color: #361106; */
-    color: white;
-  }
-  #logo{
-    margin-bottom: 100px;
-    /* margin-left: 50px; */
-  }
-  h1{
-    font-size: 40px;
-    font-family: P-Light;
-  }
-  #events{
-    margin-left: -100px;
-  }
-#buttoncontent{
- 
+}
+
+#events:hover {
+  transition: .6s;
+  background-color: #09b5e9b4;
+  color: aliceblue;
+}
+
+#events a:hover {
+  transition: .6s;
+  /* background-color: #361106; */
+  color: white;
+}
+
+#logo {
+  margin-bottom: 100px;
+  /* margin-left: 50px; */
+}
+
+h1 {
+  font-size: 40px;
+  font-family: P-Light;
+}
+
+#buttoncontent {
   margin-top: -100px;
 }
