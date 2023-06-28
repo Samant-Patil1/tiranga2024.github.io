@@ -78,3 +78,18 @@ html{
     /* background-color: #361106; */
     color: white;
   }
+  #logo{
+    margin-bottom: 100px;
+    /* margin-left: 50px; */
+  }
+  h1{
+    font-size: 40px;
+    font-family: monospace;
+  }
+  #events{
+    margin-left: -50apx;
+  }
+#buttoncontent{
+ 
+  margin-top: -100px;
+}
