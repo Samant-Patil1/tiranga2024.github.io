@@ -671,54 +671,32 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   }
 }
 
-/* <div class="container">
-            <div class="launchtimer">
+/* 
 
-             <div>
-                <p id="days">00</p>
-                 <span> Days</span>
-             </div>
-             
-             <div>
-                <p id="hours">00</p>
-                 <span> Hours</span>
-             </div>
-             
-             <div>
-                <p  id="minutes">00</p>
-                 <span> Minutes</span>
-             </div>
-             
-             <div>
-                <p id="seconds">00</p>
-                 <span> Seconds</span>
-             </div>
-             
-            </div>
-         </div>
+body{
+   background-color: black;
+}
 
-         <script>
-            var countdownDate=new Date("June 28,2023 08:00:00").getTime();
-            var x=setInterval(function(){ 
-                var now=new Date().getTime();
-                var distance= countdownDate-now;
-                var days= Math.floor(distance / (1000*60*60*24))
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                document.getElementById("days").innerHTML=days;
-                document.getElementById("hours").innerHTML=hours;
-                document.getElementById("minutes").innerHTML=minutes;
-                document.getElementById("seconds").innerHTML=seconds;
+.container{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    box-shadow:10px 5px 5px 1px rgb(1, 173, 136) ;
+}
+     .launchtimer{
+        display:flex;
+     }
+     .launchtimer div{
+        flex-basis: 100px;
 
-                if(distance < 0)
-                {
-                    clearInterval(x);
-                    document.getElementById("days").innerHTML = "00";
-                    document.getElementById("hours").innerHTML = "00";
-                    document.getElementById("minutes").innerHTML = "00";
-                    document.getElementById("seconds").innerHTML = "00";
-                }
-            },1000);
-            */
-/* #endregion */
+        flex-direction: row;
+        justify-content: right;
+     }
+     .launchtimer div p{
+        font-size: 60px;
+        margin-bottom: 20;
+
+     }
+*/
