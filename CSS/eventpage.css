@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@700;100&display=swap');
+@font-face{
+  font-family:P-Light;
+  src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+}
+
+
 *{
   color: white;
   margin: 0;
@@ -24,12 +29,13 @@ html{
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    font-family: P-Light;
   }
   #header{
     height: 110vh;
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
-          url(redfort.jpg);
+          url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
           background-size: 100% 100%;
 
   }
@@ -79,7 +85,7 @@ html{
   }
   h1{
     font-size: 40px;
-    font-family: monospace;
+    font-family: P-Light;
   }
   #events{
     margin-left: -100px;
