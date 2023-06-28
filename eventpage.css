@@ -26,11 +26,11 @@ html{
     position: relative;
   }
   #header{
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
           url(redfort.jpg);
-          background-size: cover;
+          background-size: 100% 100%;
 
   }
   #content{
