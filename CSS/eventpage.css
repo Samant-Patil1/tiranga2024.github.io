@@ -25,26 +25,30 @@ html{
   }
   body{
     height: 250vh;
-    background: transparent;
+    background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)), 
+    url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
+    background-size: 100% 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
     font-family: P-Light;
   }
 
-  .event {
-    text-align: left;
+  .eventtitle {
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
     display: inline-block;
   }
 
-  #header{
+  /*#header{
     height: 110vh;
     width: 100vw;
     background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
           url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
           background-size: 100% 100%;
 
-  }
+  }*/
   #content{
     z-index: 99;
     padding-top: 180px;
