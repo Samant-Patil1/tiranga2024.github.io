@@ -4,7 +4,7 @@
 }
 
 *{
-  color: white;
+  color: #351005;
   margin: 0;
   padding: 0;
   user-select: none;
@@ -488,29 +488,28 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   height: 100%;
 }
 .viewevent{
+  text-align: center;
+  text-decoration: none;
+  color:white;
   margin-top: 20px;
-  height: 70px;
+  height: 100px;
   width: 200px;
+  padding:10px;
   background-color: #361106;
   font: 600;
   font-size: 20px;
   font-family: P-Light;
   text-decoration: none;
   border-radius: 50px;
-}
-#vieweventbutton{
-  text-align: center;
-  text-decoration: none;
-  transition: .4s;
-}
-.viewevent:hover{
-  background-color: #ffffff;
   transition: .4s;
   
 }
-#vieweventbutton:hover{
-color: #361106;
-font-weight: bolder;
+
+.viewevent:hover{
+  background-color: white;
+  border: 1px solid #361106;
+  color:#361106;
+  
 }
 .layer{
   background: transparent;
