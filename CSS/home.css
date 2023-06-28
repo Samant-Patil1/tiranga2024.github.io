@@ -62,13 +62,13 @@ align-items: flex-end;
 #navbarcontent ul {
   text-decoration: none;
 list-style: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 }
 #navbar content ul a{
   text-decoration: none;
 }
 .header{
-    font-family: "cursive";
+    font-family: P-Light;
     height: 100vh;
     width: 100vw;
     background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/homepage2.png");
@@ -88,7 +88,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(255, 237, 215);
   opacity: 0;
   font-weight: 600;
-  font-family: cursive;
+  font-family: P-Light;
   font-size: 4vw;
   padding-bottom: 32px;
   transition: 0.1s;
@@ -98,7 +98,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(255, 237, 215);
   opacity: 0;
   font-weight: 600;
-  font-family: cursive;
+  font-family: P-Light;
   font-size: 4vw;
   padding-bottom: 32px;
   transition: 0.1s;
@@ -110,7 +110,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.6vw;
     padding-bottom: 10px;
     font-weight: 100;
-    font-family: cursive;
+    font-family: P-Light;
     text-align: center;
 }
 .header .text p {
@@ -122,7 +122,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header .text a {
   font-size: 1.6vw;
-  font-family: cursive;
+  font-family: P-Light;
   transition: 0.4s;
   text-decoration: none;
   color: rgb(255, 237, 215);
@@ -170,7 +170,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .litfest{
   height: 48vw;
   width: 100%;
-  font-family: "Roboto";
+  font-family: P-Light;
   display: flex;
   position: absolute;
   top: 100vh;
@@ -182,7 +182,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #361106;
   font-size: 2.4vw;
   font-weight: 900;
-  font-family: "Roboto";
+  font-family: P-Light;
 }
 .textinsecond p{
   color: #000000;
@@ -284,7 +284,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .oldlitfest .textindiv{
   width: 80%;
   text-align: center;
-  font-family: "Roboto";
+  font-family: P-Light;
   margin: 2.4vw auto 0;
 }
 .oldlitfest .textindiv h3{
@@ -450,7 +450,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 100px;
-  font-family: "Roboto";
+  font-family: P-Light;
 }
 .textdown h1{
   font-size: 45px;
@@ -494,7 +494,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #361106;
   font: 600;
   font-size: 20px;
-  font-family: cursive;
+  font-family: P-Light;
   text-decoration: none;
   border-radius: 50px;
 }
@@ -599,7 +599,7 @@ font-weight: bolder;
 
 /* #region login */
 .loginforregistrations{
-  font-family: "Roboto";
+  font-family: P-Light;
   width: 85.2%;
   margin: 10px auto;
   background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/bg.png");
