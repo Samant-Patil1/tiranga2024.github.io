@@ -45,14 +45,15 @@ html{
   }
   #logo{
     align-content: center;
-    height: 90px;
+    height: 120px;
     width: auto;
-    margin-bottom: 50px;
+    margin-left: 50px;
+    
   }
   #events{
     
     margin-top: 280px;
-    margin-left: -24px;
+    
     font-size: 20px;
     /* margin-left: -100px; */
     height: 70px;
@@ -87,7 +88,7 @@ html{
     font-family: P-Light;
   }
   #events{
-    margin-left: -50apx;
+    margin-left: -100px;
   }
 #buttoncontent{
  
