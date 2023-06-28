@@ -37,6 +37,7 @@ body {
   overflow-y: scroll;
   position: relative;
   font-family: P-Light;
+  background-attachment: fixed;
 }
 
 .eventtitle {
