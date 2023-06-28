@@ -366,6 +366,28 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   margin-left: -80%;
 }
 
+#radio6:checked ~ .first{
+  margin-left: -100%;
+
+}#radio7:checked ~ .first{
+  margin-left: -120%;
+
+}#radio8:checked ~ .first{
+  margin-left: -140%;
+
+}#radio9:checked ~ .first{
+  margin-left: -160%;
+
+}#radio10:checked ~ .first{
+  margin-left: -180%;
+
+}#radio11:checked ~ .first{
+  margin-left: -200%;
+
+}#radio12:checked ~ .first{
+  margin-left: -220%;
+}
+
 /*css for automatic navigation*/
 
 .navigation-auto{
