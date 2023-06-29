@@ -40,8 +40,17 @@ body {
   background-attachment: fixed;
 }
 
-.eventtitle {
+.categorytitle {
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #60aefb;
+  display: inline-block;
+}
+
+.eventtitle {
+  margin: 10px;
   font-size: large;
   font-weight: bold;
   display: inline-block;
@@ -111,6 +120,11 @@ h1 {
   font-family: P-Light;
 }
 
+#pdfbutton {
+  margin-top: -120px;
+}
+
 #buttoncontent {
-  margin-top: -100px;
+  height: 10px;
+  margin-top: -160px;
 }
