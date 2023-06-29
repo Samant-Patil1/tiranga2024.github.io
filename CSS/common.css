@@ -32,6 +32,7 @@ body{
   .sidebar.open {
     width: 250px;
     background: var(--bgcolour);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
   }
   
   .sidebar .logo-details {
