@@ -40,8 +40,17 @@ body {
   background-attachment: fixed;
 }
 
-.eventtitle {
+.categorytitle {
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #60aefb;
+  display: inline-block;
+}
+
+.eventtitle {
+  margin: 10px;
   font-size: large;
   font-weight: bold;
   display: inline-block;
@@ -69,7 +78,6 @@ body {
 }
 
 #events {
-
   margin-top: 180px;
   margin-bottom: 50px;
   float: center;
@@ -85,20 +93,17 @@ body {
   text-decoration: none;
   color: aliceblue;
   transition: .6s;
-
-
 }
 
 #events:hover {
   transition: .6s;
-  background-color: #09b5e9b4;
-  color: aliceblue;
+  background-color: white;
 }
 
 #events a:hover {
   transition: .6s;
   /* background-color: #361106; */
-  color: white;
+  color: #1188ff;
 }
 
 #logo {
@@ -111,6 +116,11 @@ h1 {
   font-family: P-Light;
 }
 
+#pdfbutton {
+  margin-top: -120px;
+}
+
 #buttoncontent {
-  margin-top: -100px;
+  height: 10px;
+  margin-top: -160px;
 }
