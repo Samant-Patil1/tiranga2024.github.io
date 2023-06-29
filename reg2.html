@@ -22,22 +22,21 @@
 
 		<form id = "registerForm" method="POST" name="google-sheet">
 
-				<input placeholder="School Name" type="Text" 
-				id="School Name" class="School" required>
+				<input placeholder="School Name" type="Text" name="School Name" class="School" required>
 
-				<input placeholder="Address" type="text" 
-				id="Address" class="Address" required>
+				<input placeholder="Address" type="text" name="Address" class="Address" required>
 				
-				<input placeholder="Mobile Number" type="tel" id="Mobile Number" class="number" required>
-				<input placeholder="Email" type="email" id="Email" class="number">
+				<input placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required>
+				
+				<input placeholder="Email" type="email" name="Email" class="number">
 	<br><br>
 	Nursery, Junior KG, Senior KG
     <br>
     <div id = "cat1" class="dropdown">
         <button type = "button" class="dropbtn">Events</button>
         <div class="dropdown-content">
-        <input id = "check1" id = "c1-dt" type="checkbox" > Dress up and Talk-2<br>
-        <input id = "check1" id = "c1-c" type="checkbox" > Colouring - 2<br>
+        <input name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
+        <input name = "C1-Colouring" type="checkbox" value="Yes"> Colouring - 2<br>
         </div>
       </div>
 
@@ -47,9 +46,9 @@
 	<div id = "cat2" class="dropdown">
 		<button id = "c2b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input id = "check2" id = "c2" type="checkbox" > Dress up and Talk-2<br>
-		<input id = "check2" id = "c2" type="checkbox" > Colouring-2<br>
-		<input id = "check2" id = "c2" type="checkbox" > Poem Recitation-2<br>
+		<input name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
+		<input name = "C2-Colouring" type="checkbox" value="Yes"> Colouring-2<br>
+		<input name = "C2-Poem Recitation" type="checkbox" value="Yes"> Poem Recitation-2<br>
 		</div>
 	</div>
 
@@ -60,9 +59,9 @@
 	<div id = "cat3" class="dropdown">
 		<button id = "c3b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input id = "check3" id = "c3-dp" type="checkbox" > Drawn and Painting-2<br>
-		<input id = "check3" id = "c3-ps" type="checkbox" > Picture Speak-2<br>
-		<input id = "check3" id = "c3-bw" type="checkbox" > Best of Waste-2<br>
+		<input name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Drawn and Painting-2<br>
+		<input name = "C3-Picture Speak" type="checkbox" value="Yes"> Picture Speak-2<br>
+		<input name = "C3-Best of Waste" type="checkbox" value="Yes"> Best of Waste-2<br>
 		</div>
 	</div>
 		
@@ -72,9 +71,9 @@
 	<div id = "cat4" class="dropdown">
 		<button id = "c4b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input id = "check4" id = "c4-mps" type="checkbox" > Monument Pencil Sketching-2<br>
-		<input id = "check4" id = "c4-fa" type="checkbox" > Flower arrangement-2<br>
-		<input id = "check4" id = "c4-r" type="checkbox" > Rangoli- Group of 2-4<br>
+		<input name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Monument Pencil Sketching-2<br>
+		<input name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Flower arrangement-2<br>
+		<input name = "C4-Rangoli" type="checkbox" value="Yes"> Rangoli (Group of 2-4)<br>
 		</div>
 	</div>
 
@@ -84,34 +83,31 @@
 	<div id = "cat5" class="dropdown">
 		<button id = "c5b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input id = "check5" id = "c5-d" type="checkbox" > Declamation - 2<br>
-		<input id = "check5" id = "c5-cm" type="checkbox" > Collage Making - 1 (Group of 2)	<br>
+		<input name = "C5-Declamation" type="checkbox" value="Yes"> Declamation - 2<br>
+		<input name = "C5-Collage Making" type="checkbox" value="Yes"> Collage Making - 1 (Group of 2)	<br>
 		</div>
 
 	</div>
-
- 				<br>
-				<button class="submitbutton" name="submit">Continue</button>
+				<br>
+				<button class="submitbutton" id = "submitbutton type="submit"  name="submit">Continue</button>
 
 		</form>
-
-		<script src = "Scripts/reg.js"></script>
 		
 	</div>
 
-	
-
 
 	<script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbydZR8oReb66JK_Z6arOBeXaMt5fjd8FZE3iVKKpshAx5Gp25ye6BCj2O80Z46ruB3czQ/exec'
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
             const form = document.forms['google-sheet']
           
-            form.addEventListener ('submit', e => {
-              e.preventDefault()
+            form.addEventListener('submit', e => {
+				e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "#")
+                .then(response => window.location = "")
                 .catch(error => console.error('Error!', error.message))
             })
+
+			
             
 	</script>
 
