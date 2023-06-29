@@ -78,7 +78,6 @@ body {
 }
 
 #events {
-
   margin-top: 180px;
   margin-bottom: 50px;
   float: center;
@@ -94,20 +93,17 @@ body {
   text-decoration: none;
   color: aliceblue;
   transition: .6s;
-
-
 }
 
 #events:hover {
   transition: .6s;
-  background-color: #09b5e9b4;
-  color: aliceblue;
+  background-color: white;
 }
 
 #events a:hover {
   transition: .6s;
   /* background-color: #361106; */
-  color: white;
+  color: #1188ff;
 }
 
 #logo {
