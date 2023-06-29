@@ -30,8 +30,7 @@
     /* color: #361106; */
     font-family: P-Light;
 }
-html,
-body {
+html, body {
   scroll-behavior: smooth;
   background-color: rgb(255, 237, 215);
   max-width: 100%;
@@ -62,7 +61,7 @@ h1,
 .first {
   width: 100%;
   height: 100vh;
-  background-image: url("https://img.freepik.com/free-vector/decorative-indian-flag-theme-republic-day-texture-design-background_1055-16781.jpg?w=740&t=st=1687445139~exp=1687445739~hmac=88f3f000281681f7cbb2b5190aeeace9888c1a895a1abdc5b5d9fe1878619e1c");
+  background-color: #361106;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -70,7 +69,7 @@ h1,
 }
 
 .first h1 {
-    color: darkblue;
+    color: rgb(255, 237, 215);
   padding-top: 5%;
   font-size: 72px;
   margin-bottom: 3%;
@@ -88,7 +87,7 @@ h1,
 }
 
 .first a:hover {
-  background-color: #000080;
+  background-color: rgb(255, 237, 215);
   color: whitesmoke;
   transition: 0.4s;
 }
@@ -174,7 +173,7 @@ color: #361106;
   margin-top: 100px;
   box-shadow: 10px 10px 50px rgba(255, 150, 241, 0.274);
   width: 80%;
-  background-image: url("https://img.freepik.com/free-vector/decorative-indian-flag-theme-republic-day-texture-design-background_1055-16781.jpg?w=740&t=st=1687445139~exp=1687445739~hmac=88f3f000281681f7cbb2b5190aeeace9888c1a895a1abdc5b5d9fe1878619e1c");
+  background-color: #361106;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -185,7 +184,7 @@ color: #361106;
 
 .form h1 {
   font-size: 52px;
-  color: #000080;
+  color: rgb(255, 237, 215);
   margin-bottom: 40px;
   padding: 0;
 }
@@ -194,8 +193,8 @@ color: #361106;
   font-size: 18px;
   transition: 0.4s;
   text-decoration: none;
-  color: #000080;
-  border: #000080 solid 1px;
+  color: rgb(255, 237, 215);
+  border: rgb(255, 237, 215) solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
   transition: 0.4s;
@@ -204,7 +203,7 @@ color: #361106;
 }
 
 .form a:hover {
-  background-color: #000080;
+  background-color: #361106;
   color: white;
 
 }

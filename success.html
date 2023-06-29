@@ -2,21 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you!</title>
-    <link rel="icon" href="Resources/Images/eurologo.png" />
-  </head>
-  <body>
+    <link rel="icon" href="Resources/Images/eurologo.png">
+
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;100&display=swap");
+      @font-face{
+        font-family:P-Light;
+        src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+      }
+
       body {
-        background: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
         url("https://eshsrtiranga.github.io/Resources/Images/flagrun.jpg");
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        font-family: "Roboto";
+        font-family: P-Light;
         color: rgb(255, 237, 215);
       }
       @keyframes starta {
@@ -30,6 +33,7 @@
           transform: translateY(0);
         }
       }
+
       .main {
         animation: starta 3000ms;
         margin: auto;
@@ -46,8 +50,8 @@
 
       .main h1 {
         font-size: 52px;
-        margin-top: -20px;
-        margin-bottom: 1%;
+        margin-top: 20px;
+        margin-bottom: 5%;
       }
 
       .main h3 {
@@ -101,9 +105,13 @@
         }
       }
     </style>
+
+
+  </head>
+  <body>
+    
     <div class="main">
-      <h1>Thank You!</h1>
-      <h3>Your submissions have been recorded!</h3>
+      <h1>Thank You for registering!</h1>
       <a href="/">Home</a>
     </div>
   </body>
