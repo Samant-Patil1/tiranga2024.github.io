@@ -1,116 +1,220 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel = "icon" href = "Resources/Images/eurologo.png">
-
-	<link rel = "stylesheet" href = "CSS/reg.css">
-	<title>Register</title>
-</head>
-
-<body class="page">
-
-	<div class="centre">
-
-		<div>
-
-			<img src="https://eurolitfest.github.io/Home/images/logo.png" class="logo">
-
-		</div>
-
-		<h1 class="name">EuroSchool HSR</h1>
-
-		<form id = "registerForm" method="POST" name="google-sheet">
-
-				<input placeholder="School Name" type="Text" name="School Name" class="School" required>
-
-				<input placeholder="Address" type="text" name="Address" class="Address" required>
-				
-				<input placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required>
-				
-				<input placeholder="Email" type="email" name="Email" class="number">
-	<br><br>
-	Nursery, Junior KG, Senior KG
-    <br>
-    <div id = "cat1" class="dropdown">
-        <button type = "button" class="dropbtn">Events</button>
-        <div class="dropdown-content">
-        <input name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
-        <input name = "C1-Colouring" type="checkbox" value="Yes"> Colouring - 2<br>
-        </div>
-      </div>
-
-	<br><br>
-	Grade 1-2
-	<br>
-	<div id = "cat2" class="dropdown">
-		<button id = "c2b" type = "button" class="dropbtn">Events</button>
-		<div class="dropdown-content">
-		<input name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
-		<input name = "C2-Colouring" type="checkbox" value="Yes"> Colouring-2<br>
-		<input name = "C2-Poem Recitation" type="checkbox" value="Yes"> Poem Recitation-2<br>
-		</div>
-	</div>
+@font-face{
+    font-family:P-Light;
+    src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
+  }
 
 
-	<br><br>
-	Grade 3-5
-	<br>
-	<div id = "cat3" class="dropdown">
-		<button id = "c3b" type = "button" class="dropbtn">Events</button>
-		<div class="dropdown-content">
-		<input name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Drawn and Painting-2<br>
-		<input name = "C3-Picture Speak" type="checkbox" value="Yes"> Picture Speak-2<br>
-		<input name = "C3-Best of Waste" type="checkbox" value="Yes"> Best of Waste-2<br>
-		</div>
-	</div>
-		
-	<br><br>
-	Grade 6-8
-	<br>
-	<div id = "cat4" class="dropdown">
-		<button id = "c4b" type = "button" class="dropbtn">Events</button>
-		<div class="dropdown-content">
-		<input name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Monument Pencil Sketching-2<br>
-		<input name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Flower arrangement-2<br>
-		<input name = "C4-Rangoli" type="checkbox" value="Yes"> Rangoli (Group of 2-4)<br>
-		</div>
-	</div>
+@keyframes fadeIn {
+            0% {opacity: 0;}
+            from{
 
-	<br><br>
-	Grade 9-12
-	<br>
-	<div id = "cat5" class="dropdown">
-		<button id = "c5b" type = "button" class="dropbtn">Events</button>
-		<div class="dropdown-content">
-		<input name = "C5-Declamation" type="checkbox" value="Yes"> Declamation - 2<br>
-		<input name = "C5-Collage Making" type="checkbox" value="Yes"> Collage Making - 1 (Group of 2)	<br>
-		</div>
+            	transform: translateY(10vw);
 
-	</div>
-				<br>
-				<button class="submitbutton" id = "submitbutton type="submit"  name="submit">Continue</button>
+            }
 
-		</form>
-		
-	</div>
+            to{
+
+            	transform: translateY(0vw);
+
+            }
+            100% {opacity: 1;}
+         }
+
+	.page {
+
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-image: url("https://eshsrtiranga.github.io/Resources/Images/image1.jpg");
+		}
 
 
-	<script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-				e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "")
-                .catch(error => console.error('Error!', error.message))
-            })
+body{
+	user-select:none;
+    font-family: P-Light;
+	color:white;
+    background-color: black;
+	background-attachment: fixed;
+	text-align:center;
+	font-size:1.7vw;
+}
 
-			
-            
-	</script>
+input{
+    border:.1vw solid white;
+}
 
-</body>
+	
+	.centre{
+		border-radius:10vw;
+		width:50%;
+		margin-bottom: 20vw;
+		display: inline-block;
+		text-align: center;
+		margin-top: 5vw;
+		align-items: center;
+		flex-direction: column;
+		background: rgba(26, 26, 26, 0.97);
+		box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
+		animation: fadeIn 3.5s;
 
-</html>
+
+	}
+
+	.logo{
+
+		height: 10vw;
+		width: 10vw;
+		margin-top: 2.5vw;
+		animation: fadeIn 2.5s;
+
+	}
+
+	.number{
+
+		height: 2vw;
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1s;
+
+	}
+
+	.submitbutton{
+		font-size:1.4vw;
+		margin-top: 3vw;
+        margin-bottom: 4.5vw;
+        padding: 1vw;
+        width: 15vw;
+        height: 5vw;
+        border: none;
+        border-radius: 10vw;
+        color: #1A1A1A;
+        background-color: white;
+        animation: fadeIn 0.5s;
+        transition: color 1s, background-color 1s;
+        transition: all 0.5s;
+	}
+
+	.submitbutton:hover{
+		color: white;
+		background-color: #1A1A1A;
+		border:.1vw solid white;
+		cursor: pointer;
+	}
+
+	.submitbutton:active{
+		opacity: 0.6;
+	}
+
+	.School{
+		display: inline;
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+		.Address{
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
+
+	.name{
+		font-size:4vw;
+		color: white;
+		font-family: P-Light;
+		animation: fadeIn 1.4;
+	}
+
+
+	  .dropdown {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    transition: all 0.4s;
+  }
+
+  .dropbtn {
+    width: 10vw;
+    height: 4vw;
+	padding:1vw;
+    border-radius: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+	background: transparent;
+    color: white;
+    font-size: 1.6vw;
+    border: .1vw solid white;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  .dropdown-content {
+    display: none;
+    border-radius:1vw ;
+    background-color: #1A1A1A;
+    text-align:left;
+    padding: 2vw;
+    color:white;
+    min-width: 16vw;
+    box-shadow: 0vw .8vw .16vw 0vw rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.4s;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: white;
+	color:#1A1A1A;
+  }
+
+label{
+	margin-top: 2vw;
+    font-size: 2vw;
+    color:white;
+}
+
+.textInput{
+    margin-bottom: 1vw;
+    color:white;
+    border:.1vw solid white;
+    width: 20vw;
+    height: 2vw;
+    border-radius: .5vw;
+}
+
+.checkBox{
+	height:2vw;
+	width:2vw
+}
+
+select{
+    outline: none;
+    border-radius: .5vw;
+    width:10vw;
+    height:3vw;
+    border: none;
+    background-color: white;
+}
