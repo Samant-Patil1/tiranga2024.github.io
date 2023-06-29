@@ -164,9 +164,9 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
   }
 }
-/* #endregion */
 
-/* #region second */
+
+
 .litfest{
   height: 48vw;
   width: 100%;
@@ -194,8 +194,8 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 }
 .textinsecond a{
   font-size: 1.7vw;
-  color: #000000;
-  border: #000000 solid 1px;
+  color: #361106;
+  border: #361106 solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
   text-decoration: none;
@@ -275,23 +275,25 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 59px;
   }
 }
-/* #endregion */
 
-/* #region oldlitfest */
-.oldlitfest{
+
+
+.tiranga{
   margin-top: 199vh;
 }
-.oldlitfest .textindiv{
-  width: 80%;
+.tiranga .textindiv{
+  border-top: .1vw solid #361106;
+  padding-top:2vw;
+  width: 100%;
   text-align: center;
   font-family: P-Light;
   margin: 2.4vw auto 0;
 }
-.oldlitfest .textindiv h3{
+.tiranga .textindiv h3{
   color: #361106;
   font-size: 2.4vw;
 }
-.oldlitfest .textindiv p{
+.tiranga .textindiv p{
   color: #361106;
   font-size: 1.6vw;
   padding: 10px 0 0;
@@ -426,14 +428,14 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 }
       
 @media (max-width: 850px){
-  .oldlitfest{
+  .tiranga{
     margin-top: 190vh;
   }
-  .oldlitfest .textindiv h3{
+  .tiranga .textindiv h3{
     padding-top: 30px;
     font-size: 25px;
   }
-  .oldlitfest .textindiv p{
+  .tiranga .textindiv p{
     font-size: 15px;
   }
   body{
@@ -515,25 +517,25 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 .viewevent{
   text-align: center;
   text-decoration: none;
-  color:white;
-  margin-top: 20px;
-  height: 100px;
-  width: 200px;
-  padding:10px;
-  background-color: #361106;
+  color:#361106;
+  border: .1vw solid #361106;
+  margin-top: 10vw;
+  height: 10vw;
+  width: 20vw;
+  padding:1vw;
+  background-color: white;
   font: 600;
-  font-size: 20px;
+  font-size: 2vw;
   font-family: P-Light;
   text-decoration: none;
-  border-radius: 50px;
-  transition: .4s;
+  border-radius: 5vw;
+  transition: all .4s;
   
 }
 
 .viewevent:hover{
-  background-color: white;
-  border: 1px solid #361106;
-  color:#361106;
+  background-color: #361106;
+  color:white;
   
 }
 .layer{
@@ -626,7 +628,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   font-family: P-Light;
   width: 85.2%;
   margin: 10px auto;
-  background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/bg.png");
+  background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/homepage2.png");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -670,33 +672,3 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
   }
 }
-
-/* 
-
-body{
-   background-color: black;
-}
-
-.container{
-    margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    box-sizing: border-box;
-    box-shadow:10px 5px 5px 1px rgb(1, 173, 136) ;
-}
-     .launchtimer{
-        display:flex;
-     }
-     .launchtimer div{
-        flex-basis: 100px;
-
-        flex-direction: row;
-        justify-content: right;
-     }
-     .launchtimer div p{
-        font-size: 60px;
-        margin-bottom: 20;
-
-     }
-*/

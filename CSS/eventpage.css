@@ -5,7 +5,6 @@
 
 
 * {
-  color: white;
   margin: 0;
   padding: 0;
   user-select: none;
@@ -24,21 +23,37 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
   overflow-x: hidden;
-  align-items: center;
+  font-family: P-Light;
 }
 
-body {
-  height: 250vh;
-  background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
-    url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
-  background-size: 100% 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  position: relative;
+
+body{
+  user-select:none;
   font-family: P-Light;
+  color:white;
+  background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)), url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
+  background-size: 100% 100%;
+  
   background-attachment: fixed;
+  text-align:center;
+  font-size:1.7vw;
 }
+
+.centre{
+  border-radius:10vw;
+  width:50%;
+  margin-bottom: 20vw;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5vw;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(26, 26, 26, 0.97);
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
+}
+
 
 .categorytitle {
   margin-top: 20px;
@@ -56,14 +71,7 @@ body {
   display: inline-block;
 }
 
-/*#header{
-    height: 110vh;
-    width: 100vw;
-    background: linear-gradient(rgba(2, 4, 14, 0.4), rgba(2, 4, 14, 0.4)),
-          url("https://eshsrtiranga.github.io/Resources/Images/redfort.jpg");
-          background-size: 100% 100%;
 
-  }*/
 #content {
   z-index: 99;
   padding-top: 180px;
@@ -116,11 +124,22 @@ h1 {
   font-family: P-Light;
 }
 
-#pdfbutton {
-  margin-top: -120px;
+.Button {
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  margin:10vw;
+  border:.1vw solid white;
+  height: 1vw;
+  width: 40vw;
+  padding:.5vw;
+  font-size: 2vw;
+  font-family: P-Light;
+  border-radius: 5vw;
+  transition: all .4s;
 }
 
-#buttoncontent {
-  height: 10px;
-  margin-top: -160px;
+.Button:hover{
+  background-color: white;
+  color:black;
 }
