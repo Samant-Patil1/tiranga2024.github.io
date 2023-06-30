@@ -669,7 +669,8 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 
 @media (max-width: 800px){
   .loginforregistrations{
-    height: 10vh;
+    height: 2vw;
+    text-align: center;
     background-position: center;
     background-size: cover;
   }
@@ -678,7 +679,9 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
   }
   .loginforregistrations a{
-    font-size: 12px;
+    float:center;
+    font-size: 1.2vw;
+    
   }
 
   .launchtimer{
