@@ -10,7 +10,7 @@ body{
 
 :root{
     /* --bgcolour: rgba(38, 9, 4, 0.476); */
-    --bgcolour: #361106;
+    --bgcolour: #361106;    
     --textcolour: rgb(255, 237, 215);
     --coloronhover: rgb(255, 237, 215);
 }
