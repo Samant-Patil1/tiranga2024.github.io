@@ -71,18 +71,18 @@ h1,
 .first h1 {
     color: rgb(255, 237, 215);
   padding-top: 5%;
-  font-size: 72px;
+  font-size: 7.2vw;
   margin-bottom: 3%;
 }
 
 .first a {
-  font-size: 40px;
+  font-size: 4vw;
   transition: 0.4s;
   text-decoration: none;
   color: black;
-  border: green solid 1px;
-  padding: 9px 20px;
-  border-radius: 22px;
+  border: green solid .1vw;
+  padding: .9vw 2vw;
+  border-radius: 2.2vw;
 
 }
 
@@ -97,12 +97,12 @@ h1,
 .container {
   margin: 0 auto;
   padding: 4rem;
-  padding-top: 100px;
+  padding-top: 10vw;
   width: 80%;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 5vw;
   padding-bottom: 5%;
   font-weight: 600;
   color: #361106;
@@ -122,25 +122,26 @@ h2 {
   width: 100%;
   padding: 3rem 3rem 1rem 0rem;
   color: #361106bf;
-  font-size: 25px;
+  font-size: 2.5vw;
   font-weight: 600;
-  border-bottom: 1px solid #361106bf;
+  border-bottom: .1vw solid #361106bf;
   transition: 1s;
+  float:center;
 }
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
   color: #361106;
-  border-bottom: 1px solid #361106;
+  border-bottom: .1vw solid #361106;
   transition: 0.3s;
 }
 .accordion a:hover::after {
-  border: 1px solid #361106;
+  border: .1vw solid #361106;
   transition: 0.3s;
 }
 .accordion a.active {
   color: #361106;
-  border-bottom: 1px solid #361106;
+  border-bottom: .1vw solid #361106;
 }
 .accordion .content {
   opacity: 0;
@@ -153,13 +154,14 @@ h2 {
   transition: all 0.2s ease 0.15s;
 }
 .accordion .content p {
-  font-size: 25px;
+  font-size: 2.5vw;
   font-weight: 600;
 }
+
 .accordion .content.active {
   opacity: 1;
   padding-top: 1rem;
-color: #361106;
+  color: #361106;
   max-height: 100%;
   -webkit-transition: all 0.35s ease 0.15s;
   -o-transition: all 0.35s ease 0.15s;
@@ -170,55 +172,55 @@ color: #361106;
 /* #region GO TO FORM PAGE DESIGN */
 .form {
   margin: 0px auto;
-  margin-top: 100px;
-  box-shadow: 10px 10px 50px rgba(255, 150, 241, 0.274);
+  margin-top: 10vw;
+  box-shadow: 1vw 1vw 5vw rgba(255, 150, 241, 0.274);
   width: 80%;
   background-color: #361106;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 1vw;
   text-align: center;
-  padding: 100px 0;
+  padding: 10vw 0;
 }
 
 .form h1 {
-  font-size: 52px;
+  font-size: 5.2vw;
   color: rgb(255, 237, 215);
-  margin-bottom: 40px;
+  margin-bottom: 4vw;
   padding: 0;
 }
 
 .form a {
-  font-size: 18px;
+  font-size: 1.8vw;
   transition: 0.4s;
   text-decoration: none;
   color: rgb(255, 237, 215);
-  border: rgb(255, 237, 215) solid 1px;
-  padding: 9px 20px;
-  border-radius: 22px;
+  border: rgb(255, 237, 215) solid .1vw;
+  padding: .9vw 2vw;
+  border-radius: 2.2vw;
   transition: 0.4s;
   animation: fadeIn 1s;
 
 }
 
 .form a:hover {
-  background-color: #361106;
-  color: white;
+  background-color: #feecd6;
+  color: #361106;
 
 }
 
 @media (max-width: 700px) {
   .form {
-    padding: 50px 0;
+    padding: 5vw 0;
   }
 
   .form h1 {
-    font-size: 25px;
+    font-size: 2.5vw;
   }
 
   .form a {
-    font-size: 13px;
+    font-size: 1.3vw;
   }
 }
 /* #endregion */
@@ -226,17 +228,17 @@ color: #361106;
 /* Ipad */
 @media (max-width: 1450px) {
   .first {
-    height: 400px;
+    height: 40vw;
   }
 
   .first h1 {
-    font-size: 53px;
-    padding-top: 110px;
+    font-size: 5.3vw;
+    padding-top: 11vw;
     padding-bottom: 2%;
   }
 
   .first a {
-    font-size: 23px;
+    font-size: 2.3vw;
   }
 
   .container {
@@ -244,18 +246,6 @@ color: #361106;
     padding: 4rem;
   }
 
-  .container h2 {
-    padding-top: 5%;
-    font-size: 45px;
-  }
-
-  .container a {
-    font-size: 35px;
-  }
-
-  .accordion .content p {
-    font-size: 22px;
-  }
 }
 
 /* Phone */
@@ -265,13 +255,13 @@ color: #361106;
   }
 
   .first h1 {
-    font-size: 28px;
+    font-size: 2.8vw;
     padding-top: 25%;
     padding-bottom: 2%;
   }
 
   .first a {
-    font-size: 13px;
+    font-size: 1.3vw;
 
   }
 
@@ -282,14 +272,11 @@ color: #361106;
 
   .container h2 {
     padding-top: 20%;
-    font-size: 25px;
+    font-size: 2.5vw;
   }
 
   .container a {
-    font-size: 17px;
+    font-size: 1.7vw;
   }
 
-  .accordion .content p {
-    font-size: 15px;
-  }
 }

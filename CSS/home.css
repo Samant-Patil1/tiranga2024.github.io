@@ -78,11 +78,11 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
 }
 .header .text{
-  position: absolute;
-  top: 25%;
+  top: 20%;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   text-align: center;
+  margin-top: 5vw;
 }
 .header .text h1 {
   color: rgb(255, 237, 215);
@@ -90,7 +90,6 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-family: P-Light;
   font-size: 4vw;
-  padding-bottom: 32px;
   transition: 0.1s;
   text-align: center;
 }
@@ -106,7 +105,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 }
 .header .text h3{
     margin-bottom: 1px;
-  color: rgb(255, 237, 215);
+    color: rgb(255, 237, 215);
     font-size: 1.6vw;
     padding-bottom: 10px;
     font-weight: 100;
@@ -114,7 +113,6 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 .header .text p {
-  padding-bottom: 52px;
   color: rgb(255, 237, 215);
   opacity: 0;
   font-weight: 100;
@@ -130,7 +128,6 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   opacity: 0;
   padding: 9px 20px;
   border-radius: 22px;
-  margin-bottom: 22px;
 }
 .header .text a:hover {
   background-color: rgb(255, 237, 215);
@@ -140,7 +137,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 .header img{
     width: 130px;
     height: auto;
-    padding: -100px;
+    padding: 1px;
     animation: h3animation 1000ms;
 }
 @media (max-width: 850px){
@@ -175,6 +172,11 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   position: absolute;
   top: 100vh;
 }
+
+.litfest h2{
+  margin-left:5vw;
+}
+
 .textinsecond{
   margin-top: 3.4vw;
 }
@@ -198,6 +200,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   border: #361106 solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
+  margin-left:1vw;
   text-decoration: none;
   transition: .4s;
 }
@@ -229,6 +232,11 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   .litfest .textinsecond{
     padding: 0;
   }
+
+  .litfest .textinsecond h2{
+    margin: 1vw;
+  }
+
   .litfest .textinsecond h1{
     font-size: 25px;
     padding-top: 30px;
@@ -261,7 +269,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     width: 76%;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 5px;
   }
   .litfest .countdown .wrappper .timer{
     width: 112px;

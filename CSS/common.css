@@ -18,6 +18,7 @@ body{
 /* #region SIDEBAR DESIGN */
 .sidebar {
     font-family: P-Light,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#feecd6;
     position: fixed;
     right: 0;
     top: 0;
@@ -370,34 +371,54 @@ body{
    
  .container{
     text-align:center;
-     margin-top:30vw;
-     padding: 2vw;
-     font-family: Arial, Helvetica, sans-serif;
-     color: #ffedd7;
-     box-sizing: border-box;
+    padding: 2vw;
+    font-family: P-Light ,Arial, Helvetica, sans-serif;
+    color: #ffedd7;
+    white-space: nowrap;
+    overflow-x: auto;
  }
-      .launchtimer{
-         display:flex;
-         justify-content: center;
-         font-family: P-Light;
-      }
-      .launchtimer span{
-         flex-basis: 100px;
- 
-         flex-direction: row;
-         justify-content: right;
-         color:white;
-         margin-left: 2vw;
-         padding:2vw;
-      }
-      .launchtimer div h1{
-         font-size: 60px;
-         margin-bottom: 20;
-         color:white;
-         padding: 2vw;
-         margin-left: 2vw;
- 
-      }
+
+
+#days{
+  left:31vw;
+  position:absolute;
+  font-size:3vw;
+  display:inline-block;
+  color:#fce9d3;
+}
+
+#hours{
+  left: 40.5vw;
+  position:absolute;
+  font-size:3vw;
+  display:inline-block;
+  color:#fce9d3;
+}
+
+#minutes{
+  right:45.4vw;
+  position:absolute;
+  font-size:3vw;
+  display:inline-block;
+  color:#fce9d3;
+}
+
+#seconds{
+  right:33.3vw;
+  position:absolute;
+  font-size:3vw;
+  display:inline-block;
+  color:#fce9d3;
+}
+
+.count-text{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  color:#ffedd7;
+  margin:2vw;
+  font-size:2vw;
+}
  
   /* #endregion */
   /* #endregion */

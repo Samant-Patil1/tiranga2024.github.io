@@ -68,31 +68,14 @@
          <h1 id="head" style="animation: 2.5s ease 0s 1 normal none running hanimation;">Tiranga 2023</h1>
       </div>
 
-       <div class="container">
-         <div class="launchtimer">
-
-          <div>
-            <h1 id="days">00</h1>
-             <span> Days</span>
+      <br>
+          <div class = "container">
+            <div class = "time-text">
+            <h1 id="days">00</h1> <h1 id="hours">00</h1> <h1  id="minutes">00</h1> <h1 id="seconds">00</h1>
+            </div>
+            <br>
+            <span class = "count-text">Days</span><span class = "count-text"> Hours</span><span class = "count-text"> Minutes</span><span class = "count-text"> Seconds</span>
           </div>
-         
-          <div>
-            <h1 id="hours">00</h1>
-             <span> Hours</span>
-          </div>
-         
-          <div>
-            <h1  id="minutes">00</h1>
-             <span> Minutes</span>
-          </div>
-         
-          <div>
-            <h1 id="seconds">00</h1>
-             <span> Seconds</span>
-          </div>
-         
-         </div>
-       </div>
   
     </section>
     <section class="litfest" id="second">
@@ -239,6 +222,8 @@ joyous spirit of AZADI. </p>
       <h2 style="padding-top: 50px;">Euroschool HSR Layout</h2>
     </section>
     <!-- <script src="./javascript/script.js" type="modulle"></script> -->
+    
+    
     <script>
 
       var heading = document.getElementById("head");
@@ -316,10 +301,22 @@ joyous spirit of AZADI. </p>
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                document.getElementById("days").innerHTML=days;
-                document.getElementById("hours").innerHTML=hours;
-                document.getElementById("minutes").innerHTML=minutes;
-                document.getElementById("seconds").innerHTML=seconds;
+                if(days < 10)
+                  document.getElementById("days").innerHTML="0"+days;
+                else
+                  document.getElementById("days").innerHTML=days;
+                if(hours < 10)
+                  document.getElementById("hours").innerHTML="0"+hours;
+                else
+                  document.getElementById("hours").innerHTML=hours;
+                if(minutes < 10)
+                  document.getElementById("minutes").innerHTML="0"+minutes;
+                else
+                  document.getElementById("minutes").innerHTML=minutes;
+                if(seconds < 10)
+                  document.getElementById("seconds").innerHTML="0"+seconds;
+                else
+                  document.getElementById("seconds").innerHTML=seconds;
 
                 if(distance < 0)
                 {
