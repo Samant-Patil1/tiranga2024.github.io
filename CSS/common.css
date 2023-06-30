@@ -380,7 +380,7 @@ body{
       .launchtimer{
          display:flex;
          justify-content: center;
-         ;
+         
       }
       .launchtimer span{
          flex-basis: 100px;
