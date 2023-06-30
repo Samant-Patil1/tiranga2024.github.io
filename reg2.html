@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "icon" href = "Resources/Images/eurologo.png">
-
 	<link rel = "stylesheet" href = "CSS/reg.css">
+	<link rel = "stylesheet" href = "CSS/common.css">
+	<link rel = "stylesheet" href = "CSS/help.css">
+	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
 	<title>Register</title>
 </head>
+
+<div class="sidebar">
+	<div class="logo-details">
+	  
+	  <div class="logo_name">Tiranga 2023</div>
+	  <i class="bx bx-menu" id="btn"></i>
+	</div>
+	<ul class="nav-list">
+	  <li>
+		<a href="#header" class="link">
+		  <i class="bx bx-home"></i>
+		  <span class="links_name">Home</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="reg2.html" class="link">
+		  <i class="bx bx-envelope-open"></i>
+		  <span class="links_name">Register</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="#tiranga" class="link">
+		  <i class="bx bx-camera"></i>
+		  <span class="links_name">Gallery</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="Resources/Tiranga_2023-Event_Details&Rules.pdf" class="link">
+		  <i class="bx bx-calendar"></i>
+		  <span class="links_name">Events</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="contact.html" class="link">
+		  <i class="bx bx-question-mark"></i>
+		  <span class="links_name">Contact us</span>
+		</a>
+	  </li>
+	</ul>
+  </div>
+
 
 <body class="page">
 
@@ -35,8 +79,8 @@
     <div id = "cat1" class="dropdown">
         <button type = "button" class="dropbtn">Events</button>
         <div class="dropdown-content">
-        <input class = "checkBox" name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
-        <input class = "checkBox" name = "C1-Colouring" type="checkbox" value="Yes"> Colouring - 2<br>
+        <input class = "checkBox" name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Revolters’s Memoir<br>
+        <input class = "checkBox" name = "C1-Colouring" type="checkbox" value="Yes"> Splurge Of Hue<br>
         </div>
       </div>
 
@@ -46,9 +90,9 @@
 	<div id = "cat2" class="dropdown">
 		<button id = "c2b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Dress up and Talk-2<br>
-		<input class = "checkBox" name = "C2-Colouring" type="checkbox" value="Yes"> Colouring-2<br>
-		<input class = "checkBox" name = "C2-Poem Recitation" type="checkbox" value="Yes"> Poem Recitation-2<br>
+		<input class = "checkBox" name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Revolters’s Memoir<br>
+		<input class = "checkBox" name = "C2-Colouring" type="checkbox" value="Yes"> Splurge Of Hue<br>
+		<input class = "checkBox" name = "C2-Poem Recitation" type="checkbox" value="Yes"> Nationalist Versifier<br>
 		</div>
 	</div>
 
@@ -59,9 +103,10 @@
 	<div id = "cat3" class="dropdown">
 		<button id = "c3b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Drawn and Painting-2<br>
-		<input class = "checkBox" name = "C3-Picture Speak" type="checkbox" value="Yes"> Picture Speak-2<br>
-		<input class = "checkBox" name = "C3-Best of Waste" type="checkbox" value="Yes"> Best of Waste-2<br>
+		<input class = "checkBox" name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Brushing Strokes Of
+		Nationalism<br>
+		<input class = "checkBox" name = "C3-Picture Speak" type="checkbox" value="Yes"> Communicate Your power of Speech<br>
+		<input class = "checkBox" name = "C3-Best of Waste" type="checkbox" value="Yes"> Treasures From Trash<br>
 		</div>
 	</div>
 		
@@ -71,9 +116,9 @@
 	<div id = "cat4" class="dropdown">
 		<button id = "c4b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Monument Pencil Sketching-2<br>
-		<input class = "checkBox" name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Flower arrangement-2<br>
-		<input class = "checkBox" name = "C4-Rangoli" type="checkbox" value="Yes"> Rangoli (Group of 2-4)<br>
+		<input class = "checkBox" name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Monument Pencil sketching<br>
+		<input class = "checkBox" name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Blossoms Of Freedom<br>
+		<input class = "checkBox" name = "C4-Rangoli" type="checkbox" value="Yes"> Kaleidoscopic Array<br>
 		</div>
 	</div>
 
@@ -83,8 +128,11 @@
 	<div id = "cat5" class="dropdown">
 		<button id = "c5b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Declamation - 2<br>
-		<input class = "checkBox" name = "C5-Collage Making" type="checkbox" value="Yes"> Collage Making - 1 (Group of 2)	<br>
+		<input class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Voice Of India<br>
+		<input class = "checkBox" name = "C5-Face Painting" type="checkbox" value="Yes"> Living Art Work<br>
+		<input class = "checkBox" name = "C5-Group Song" type="checkbox" value="Yes"> Unity Of Rhythm<br>
+		<input class = "checkBox" name = "C5-Group Dance" type="checkbox" value="Yes"> Trance by dance<br>
+		<input class = "checkBox" name = "C5-Mime" type="checkbox" value="Yes"> Expressive Silence<br>
 		</div>
 
 	</div>

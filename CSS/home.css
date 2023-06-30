@@ -10,8 +10,8 @@
   user-select: none;
 }
 :root{
-  --brown: #5b1d0b;
-  --darkerbrown: #361106;
+  --brown: #017dc5;
+  --darkerbrown: #016ba8;
   --scrollbarthumbcolour: rgb(164, 164, 164);
 }
 ::-webkit-scrollbar{
@@ -179,13 +179,13 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 3.4vw;
 }
 .textinsecond h1{
-  color: #361106;
+  color: #017dc5;
   font-size: 2.4vw;
   font-weight: 900;
   font-family: P-Light;
 }
 .textinsecond p{
-  color: #000000;
+  color: black;
   font-size: 1.7vw;
   padding-right: 100px;
   line-height: 2.4vw;
@@ -234,6 +234,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 30px;
     text-align: center;
     margin: auto;
+    color: #017dc5;
   }
   .litfest .textinsecond p{
     font-size: 15px;
@@ -670,5 +671,9 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   }
   .loginforregistrations a{
     font-size: 12px;
+  }
+
+  .launchtimer{
+    float:right;
   }
 }
