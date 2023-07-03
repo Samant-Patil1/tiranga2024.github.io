@@ -23,8 +23,9 @@
 	.page {
 
 			background-repeat:no-repeat;
-			background-size:cover;
-			background-image: url("https://eshsrtiranga.github.io/Resources/Images/HAWA-MAHAL-PD-BLOG.jpg");
+			background-size:100% 100%;
+			background-color: #9c9c9c;
+
 		}
 
 
@@ -32,7 +33,7 @@ body{
 	user-select:none;
     font-family: P-Light;
 	color:white;
-    background-color: black;
+		
 	background-attachment: fixed;
 	text-align:center;
 	font-size:1.7vw;
@@ -53,6 +54,8 @@ input{
 		align-items: center;
 		flex-direction: column;
 		background: rgba(26, 26, 26, 0.97);
+			
+
 		box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
 		animation: fadeIn 3.5s;
 	}
