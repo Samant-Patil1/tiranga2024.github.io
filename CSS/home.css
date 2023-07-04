@@ -85,7 +85,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 5vw;
 }
 .header .text h1 {
-  color: rgb(255, 237, 215);
+  color: #ffedd7;
   opacity: 0;
   font-weight: 600;
   font-family: P-Light;
@@ -94,7 +94,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 .header .text h2 {
-  color: rgb(255, 237, 215);
+  color: #ecd8bf;
   opacity: 0;
   font-weight: 600;
   font-family: P-Light;
@@ -105,7 +105,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 }
 .header .text h3{
     margin-bottom: 1px;
-    color: #ff9966;
+    color: #ecd8bf;
     font-size: 1.6vw;
     padding-bottom: 10px;
     font-weight: 100;
@@ -113,7 +113,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 .header .text p {
-  color: rgb(255, 237, 215);
+  color: #ecd8bf;
   opacity: 0;
   font-weight: 100;
   font-size: 1.6vw;
@@ -123,15 +123,15 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   font-family: P-Light;
   transition: 0.4s;
   text-decoration: none;
-  color: rgb(255, 237, 215);
-  border: rgb(255, 237, 215) solid 1px;
+  color: #ecd8bf;
+  border: #ecd8bf solid 1px;
   opacity: 0;
   padding: 9px 20px;
   border-radius: 22px;
 }
 .header .text a:hover {
   background-color: rgb(255, 237, 215);
-  color: #5b2b0b;
+  color: #ecd8bf;
   transition: 0.4s;
 }
 .header img{
@@ -168,17 +168,19 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   height: 48vw;
   width: 100%;
   font-family: P-Light;
+  background-color: #e7e1d9;
   display: flex;
   position: absolute;
   top: 100vh;
 }
 
-.litfest h2{
-  margin-left:5vw;
+.gallery{
+  margin-top: 3vw;
 }
 
 .textinsecond{
   margin-top: 3.4vw;
+  margin-left:0%;
 }
 .textinsecond h1{
   color: #017dc5;
@@ -200,7 +202,6 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   border: #361106 solid 1px;
   padding: 9px 20px;
   border-radius: 22px;
-  margin-left:1vw;
   text-decoration: none;
   transition: .4s;
 }
@@ -209,10 +210,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   transition: .4s;
   color: rgb(255, 237, 215);
 }
-.wrappper .timer h3{
-  color: rgb(255, 237, 215);
-  font-size: 7vw;
-}
+
 .litfest .textinsecond{
   padding-top: 5%;
   padding-left: 10%;

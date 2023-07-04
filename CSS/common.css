@@ -68,13 +68,25 @@ body{
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    transition: all 0.4s ease;
     font-size: 23px;
     text-align: center;
     cursor: pointer;
+    padding-bottom:0px;
+    padding-top:0px;
+    margin:0px;
     transition: all 0.5s ease;
     color: white;
+    background-color: #381a12;
+    border-radius: 20px;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
+    transition: all 0.4s ease;
+    
   }
+
+.sidebar.open .logo-details #btn{
+  background-color:transparent;
+  box-shadow: none;
+}
   
   .sidebar i {
     color: rgba(255, 255, 255, 0);
@@ -373,7 +385,7 @@ body{
     text-align:center;
     padding: 2vw;
     font-family: P-Light ,Arial, Helvetica, sans-serif;
-    color: #ffedd7;
+    color: #ecd8bf;
     white-space: nowrap;
     overflow-x: auto;
  }
@@ -384,7 +396,7 @@ body{
   position:absolute;
   font-size:3vw;
   display:inline-block;
-  color:#fce9d3;
+  color:#ecd8bf;
 }
 
 #hours{
@@ -392,7 +404,7 @@ body{
   position:absolute;
   font-size:3vw;
   display:inline-block;
-  color:#fce9d3;
+  color:#ecd8bf;
 }
 
 #minutes{
@@ -400,7 +412,7 @@ body{
   position:absolute;
   font-size:3vw;
   display:inline-block;
-  color:#fce9d3;
+  color:#ecd8bf;
 }
 
 #seconds{
@@ -408,14 +420,14 @@ body{
   position:absolute;
   font-size:3vw;
   display:inline-block;
-  color:#fce9d3;
+  color:#ecd8bf;
 }
 
 .count-text{
   display: inline-block;
   justify-content: center;
   text-align: center;
-  color:#ffedd7;
+  color:#ecd8bf;
   margin:2vw;
   font-size:2vw;
 }

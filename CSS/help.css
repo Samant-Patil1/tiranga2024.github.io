@@ -95,10 +95,12 @@ h1,
 
 /* #region FAQS */
 .container {
-  margin: 0 auto;
-  padding: 4rem;
+  margin-left: 18%;
+  margin-left: 18%;
+  padding: 6.4vw;
   padding-top: 10vw;
-  width: 80%;
+  width: 50%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -210,6 +212,8 @@ h2 {
 
 }
 
+
+/*
 @media (max-width: 700px) {
   .form {
     padding: 5vw 0;
@@ -223,9 +227,13 @@ h2 {
     font-size: 1.3vw;
   }
 }
+
+*/
 /* #endregion */
 
 /* Ipad */
+
+/*
 @media (max-width: 1450px) {
   .first {
     height: 40vw;
@@ -247,8 +255,12 @@ h2 {
   }
 
 }
+*/
+
 
 /* Phone */
+
+/*
 @media (max-width: 750px) {
   .first {
     height: 40vh;
@@ -280,3 +292,5 @@ h2 {
   }
 
 }
+
+*/
