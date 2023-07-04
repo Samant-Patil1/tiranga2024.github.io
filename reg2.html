@@ -190,7 +190,7 @@
 				let C6GD = document.getElementById("C6-GD");
 				let C6M = document.getElementById("C6-M");
 				let C6ALL = document.getElementById("C6-All");
-				var events6Dict = {C6GS:C6GS.checked,C6GD:C6GD.checked,C6M:C6M.checked}
+				var events6Dict = {C6GS:C6GS.checked,C6GD:C6GD.checked,C6M:C6M.checked, C6ALL:C6ALL.checked}
 
 				localStorage.setItem("name", name.value);
 				localStorage.setItem("address", address.value);
@@ -206,7 +206,7 @@
 				console.log(new FormData(form));
 
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "success.html")
+                .then(response => window.location = "payment2.html")
                 .catch(error => console.error('Error!', error.message))
             })
 

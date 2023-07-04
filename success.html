@@ -143,7 +143,7 @@
         events6["C6GD"] = false
         events6["C6GS"] = false
         events6["C6M"] = false
-        events6["C6All"] = true
+        events6["C6ALL"] = true
       }
 
       let cost = 250;
@@ -191,12 +191,12 @@
       }
       for(var key in events6)
       {
-        if(events6[key] == true && key != "C6All")
+        if(events6[key] == true && key != "C6ALL")
         {
           cost+=500;
           nevents++;
         }
-        if(events6[key] == true && key == "C6All")
+        if(events6[key] == true && key == "C6ALL")
         {
           cost+=1000;
           nevents+=3;

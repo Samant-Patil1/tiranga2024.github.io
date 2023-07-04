@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel = "icon" href = "Resources/Images/eurologo.png">
+	<link rel = "stylesheet" href = "CSS/reg.css">
 	<style>
 
 		@keyframes fadeIn {
@@ -23,32 +24,42 @@
 					100% {opacity: 1;}
 				 }
 		
+
+
+				 body{
+					user-select:none;
+					font-family: P-Light;
+					color:white;
+					background-image: url("https://eshsrtiranga.github.io/Resources/Images/taj-mahal-agra-india.jpg");
+					text-align:center;
+					font-size:1.7vw;
+				}
+
+
 			.page {
 		
 					background-repeat:no-repeat;
 					background-size:cover;
-					background-image: url("https://eshsrtiranga.github.io/Resources/Images/image1.jpg")
 		
 				}
 		
 		
 			
-			.centre{
-		
-				margin-left: 35%;
-				margin-right: 35%;
-				margin-bottom: 200px;
-				display: inline-block;
-				text-align: center;
-				margin-top: 160px;
-				align-items: center;
-				flex-direction: column;
-				background: rgba(0, 0, 0, 0.1);
-				box-shadow: 0 0 10px rgba(0, 0, 0, 2);
-				animation: fadeIn 3.5s;
-		
-		
-			}
+				.centre{
+					border-radius:10vw;
+					width:50%;
+					margin-bottom: 20vw;
+					display: inline-block;
+					text-align: center;
+					margin-top: 5vw;
+					align-items: center;
+					flex-direction: column;
+					background: rgba(26, 26, 26, 0.97);
+						
+
+					box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
+					animation: fadeIn 3.5s;
+				}
 		
 			.logo{
 		
@@ -78,80 +89,50 @@
 			}
 		
 			.submitbutton{
-		
-				margin-top: 20px;
-				margin-bottom: 45px;
-				width: 100px;
-				height: 30px;
+				font-size:1.4vw;
+				margin-top: 3vw;
+				margin-bottom: 4.5vw;
+				padding: 1vw;
+				width: 15vw;
+				height: 5vw;
 				border: none;
-				border-radius: 15px;
-				color: white;
-				background-color: blue;
-				transition: color 1s, background-color 1s;
-				transition: transform 0.5s;
+				border-radius: 10vw;
+				color: #1A1A1A;
+				background-color: white;
 				animation: fadeIn 0.5s;
+				transition: color 1s, background-color 1s;
+				transition: all 0.5s;
 			}
 		
 			.submitbutton:hover{
-				color: blue;
-				background-color: white;
+				color: white;
+				background-color: #1A1A1A;
+				border:.1vw solid white;
 				cursor: pointer;
-				transform: translateY(-6px);
 			}
-		
+
 			.submitbutton:active{
 				opacity: 0.6;
 			}
 		
-			.School{
+			.Transaction{
 				display: inline;
-				width: 200px;
-				margin-top: 20px;
-				margin-left: 60px;
-				margin-right: 60px;
-				width: 200px;
+				width: 25vw;
+				margin-top: 2vw;
+				margin-bottom: 1vw;
 				outline: none;
-				border-radius: 40px;
+				border-radius: 4vw;
 				background: transparent;
-				padding: 10px;
-				font-size: 13px;
-				color: white;
-				animation: fadeIn 1.5s;
-			}
-		
-				.Event{
-				display: inline;
-				width: 200px;
-				margin-top: 20px;
-				margin-left: 60px;
-				margin-right: 60px;
-				width: 200px;
-				outline: none;
-				border-radius: 40px;
-				background: transparent;
-				padding: 10px;
-				font-size: 13px;
-				color: indianred;
-				animation: fadeIn 1.5s;
-			}
-		
-				.Address{
-				width: 200px;
-				margin-top: 20px;
-				margin-left: 60px;
-				margin-right: 60px;
-				width: 200px;
-				outline: none;
-				border-radius: 40px;
-				background: transparent;
-				padding: 10px;
-				font-size: 13px;
+				padding: 1vw;
+				font-size: 1.3vw;
 				color: white;
 				animation: fadeIn 1.5s;
 			}
 		
 			.name{
-				color: #a8d2e7;
+				font-size:4vw;
+				color: white;
+				font-family: P-Light;
 				animation: fadeIn 1.4;
 			}
 		
@@ -177,7 +158,10 @@
 
 			<div>
 
-				<input placeholder="Transaction ID" type="Text" name="Transaction ID" class="School" required>
+				<p id = "Cost"></p>
+
+				<p id = "Events"></p>
+				<input placeholder="Transaction ID" type="Text" name="Transaction ID" class="Transaction" required>
 
 
 			</div>
@@ -194,6 +178,111 @@
 
 
 	<script>
+
+			let name = localStorage.getItem("name");
+			let address = localStorage.getItem("address");
+			let number = localStorage.getItem("number");
+			let email = localStorage.getItem("email");
+			let events1 = JSON.parse(localStorage.getItem("events1"));
+			let events2 = JSON.parse(localStorage.getItem("events2"));
+			let events3 = JSON.parse(localStorage.getItem("events3"));
+			let events4 = JSON.parse(localStorage.getItem("events4"));
+			let events5 = JSON.parse(localStorage.getItem("events5"));
+			let events6 = JSON.parse(localStorage.getItem("events6"));
+
+
+			console.log(events1);
+			console.log(events2);
+			console.log(events3);
+			console.log(events4);
+			console.log(events5);
+			console.log(events6);
+
+
+			if(events6["C6ALL"] == true)
+			{
+				events6["C6GD"] = false
+				events6["C6GS"] = false
+				events6["C6M"] = false
+			}
+
+			if(events6["C6GD"] == true && events6["C6GS"] == true && events6["C6M"] == true)
+			{
+				events6["C6GD"] = false
+				events6["C6GS"] = false
+				events6["C6M"] = false
+				events6["C6ALL"] = true
+			}
+
+			let cost = 250;
+			let nevents = 0;
+
+			for(var key in events1)
+			{
+				if(events1[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events2)
+			{
+				if(events2[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events3)
+			{
+				if(events3[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events4)
+			{
+				if(events4[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events5)
+			{
+				if(events5[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events6)
+			{
+				if(events6[key] == true && key != "C6ALL")
+				{
+				cost+=500;
+				nevents++;
+				}
+				if(events6[key] == true && key == "C6ALL")
+				{
+				cost+=1000;
+				nevents+=3;
+				}
+			}
+
+
+			localStorage.clear()
+
+			console.log(cost);
+			console.log(nevents);
+
+			let costPara = document.getElementById("Cost");
+			let eventsPara = document.getElementById("Events")
+
+			costPara.innerHTML = "Cost: Rs."+cost;
+			eventsPara.innerHTML = "Number of events choosen: "+nevents
+
             const scriptURL = 'https://script.google.com/macros/s/AKfycbydZR8oReb66JK_Z6arOBeXaMt5fjd8FZE3iVKKpshAx5Gp25ye6BCj2O80Z46ruB3czQ/exec'
             const form = document.forms['google-sheet']
           
