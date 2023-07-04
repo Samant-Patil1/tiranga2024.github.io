@@ -1,4 +1,4 @@
-const countToDate = new Date("Aug 10, 2023 09:30:00").getTime()
+const countToDate = new Date("Aug 5, 2023 09:30:00").getTime()
 
 let previousTimeBetweenDates
 setInterval(() => {
