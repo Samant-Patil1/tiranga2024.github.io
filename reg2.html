@@ -59,23 +59,23 @@
 
 		<h1 class="name">EuroSchool HSR</h1>
 
-		<form id = "registerForm" method="POST" name="google-sheet">
+		<form id = "registerForm" method="GET" name="google-sheet">
 
-				<input placeholder="School Name" type="Text" name="School Name" class="School" required>
+				<input id = "School Name" placeholder="School Name" type="Text" name="School Name" class="School" required>
 
-				<input placeholder="Address" type="text" name="Address" class="Address" required>
+				<input id = "Address" placeholder="Address" type="text" name="Address" class="Address" required>
 				
-				<input placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required>
+				<input id = "Mobile Number" placeholder="Mobile Number" type="tel" name="Mobile Number" class="number" required>
 				
-				<input placeholder="Email" type="email" name="Email" class="number">
+				<input id = "Email" placeholder="Email" type="email" name="Email" class="number">
 	<br><br>
 	Nursery, Junior KG, Senior KG
     <br>
     <div id = "cat1" class="dropdown">
         <button type = "button" class="dropbtn">Events</button>
         <div class="dropdown-content">
-        <input class = "checkBox" name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Revolters’ Memoir - Rs. 150<br>
-        <input class = "checkBox" name = "C1-Colouring" type="checkbox" value="Yes"> Splurge Of Hue - Rs. 150<br>
+        <input id = "C1-DT" class = "checkBox" name = "C1-Dress up and Talk" type="checkbox" value="Yes"> Revolters’ Memoir - Rs. 150<br>
+        <input id = "C1-C" class = "checkBox" name = "C1-Colouring" type="checkbox" value="Yes"> Splurge Of Hue - Rs. 150<br>
         </div>
       </div>
 
@@ -85,9 +85,9 @@
 	<div id = "cat2" class="dropdown">
 		<button id = "c2b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Revolters’ Memoir - Rs. 150<br>
-		<input class = "checkBox" name = "C2-Colouring" type="checkbox" value="Yes"> Splurge Of Hue - Rs. 150<br>
-		<input class = "checkBox" name = "C2-Poem Recitation" type="checkbox" value="Yes"> Nationalist Versifier - Rs. 150<br>
+		<input id = "C2-DT" class = "checkBox" name = "C2-Dress up and Talk" type="checkbox" value="Yes"> Revolters’ Memoir - Rs. 150<br>
+		<input id = "C2-C" class = "checkBox" name = "C2-Colouring" type="checkbox" value="Yes"> Splurge Of Hue - Rs. 150<br>
+		<input id = "C2-PR" class = "checkBox" name = "C2-Poem Recitation" type="checkbox" value="Yes"> Nationalist Versifier - Rs. 150<br>
 		</div>
 	</div>
 
@@ -98,10 +98,10 @@
 	<div id = "cat3" class="dropdown">
 		<button id = "c3b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Brushing Strokes Of
+		<input id = "C3-DP" class = "checkBox" name = "C3-Drawn and Painting" type="checkbox" value="Yes"> Brushing Strokes Of
 		Nationalism - Rs. 150<br>
-		<input class = "checkBox" name = "C3-Picture Speak" type="checkbox" value="Yes"> Communicate Your Power of Speech - Rs. 150<br>
-		<input class = "checkBox" name = "C3-Best of Waste" type="checkbox" value="Yes"> Treasures from Trash - Rs. 150<br>
+		<input id = "C3-PS" class = "checkBox" name = "C3-Picture Speak" type="checkbox" value="Yes"> Communicate Your Power of Speech - Rs. 150<br>
+		<input id = "C3-BW" class = "checkBox" name = "C3-Best of Waste" type="checkbox" value="Yes"> Treasures from Trash - Rs. 150<br>
 		</div>
 	</div>
 		
@@ -111,9 +111,9 @@
 	<div id = "cat4" class="dropdown">
 		<button id = "c4b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Resketching History - Rs. 150<br>
-		<input class = "checkBox" name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Blossoms of Freedom - Rs. 150<br>
-		<input class = "checkBox" name = "C4-Rangoli" type="checkbox" value="Yes"> Kaleidoscopic Array - Rs. 150<br>
+		<input id = "C4-MPS" class = "checkBox" name = "C4-Monument Pencil Sketching" type="checkbox" value="Yes"> Resketching History - Rs. 150<br>
+		<input id = "C4-FA" class = "checkBox" name = "C4-Flower Arrangement" type="checkbox" value="Yes"> Blossoms of Freedom - Rs. 150<br>
+		<input id = "C4-R" class = "checkBox" name = "C4-Rangoli" type="checkbox" value="Yes"> Kaleidoscopic Array - Rs. 150<br>
 		</div>
 	</div>
 
@@ -123,8 +123,8 @@
 	<div id = "cat5" class="dropdown">
 		<button id = "c5b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Voice Of India - Rs. 150<br>
-		<input class = "checkBox" name = "C5-Face Painting" type="checkbox" value="Yes"> Living Art Work - Rs. 150<br>
+		<input id = "C5-GS" class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Voice Of India - Rs. 150<br>
+		<input id = "C5-FP" class = "checkBox" name = "C5-Face Painting" type="checkbox" value="Yes"> Living Art Work - Rs. 150<br>
 		</div>
 
 	</div>
@@ -135,10 +135,10 @@
 	<div id = "cat5" class="dropdown">
 		<button id = "c5b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input class = "checkBox" name = "C6-Group Song" type="checkbox" value="Yes"> Unity Of Rhythm - Rs. 500<br>
-		<input class = "checkBox" name = "C6-Group Dance" type="checkbox" value="Yes"> Trance by Dance - Rs. 500<br>
-		<input class = "checkBox" name = "C6-Mime" type="checkbox" value="Yes"> Expressive Silence - Rs. 500<br>
-		<input class = "checkBox" name = "C6-All Three" type="checkbox" value="Yes"> All Three  - Rs. 1000<br>
+		<input id = "C6-GS" class = "checkBox" name = "C6-Group Song" type="checkbox" value="Yes"> Unity Of Rhythm - Rs. 500<br>
+		<input id = "C6-GD" class = "checkBox" name = "C6-Group Dance" type="checkbox" value="Yes"> Trance by Dance - Rs. 500<br>
+		<input id = "C6-M" class = "checkBox" name = "C6-Mime" type="checkbox" value="Yes"> Expressive Silence - Rs. 500<br>
+		<input id = "C6-All" class = "checkBox" name = "C6-All Three" type="checkbox" value="Yes"> All Three  - Rs. 1000<br>
 		</div>
 
 	</div>
@@ -153,9 +153,58 @@
 	<script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
             const form = document.forms['google-sheet']
+
+			
           
             form.addEventListener('submit', e => {
 				e.preventDefault()
+				let name = document.getElementById("School Name");
+				let address = document.getElementById("Address");
+				let number = document.getElementById("Mobile Number");
+				let email = document.getElementById("Email");
+
+				let C1DT = document.getElementById("C1-DT");
+				let C1C = document.getElementById("C1-C");
+				var events1Dict = {C1DT:C1DT.checked, C1C:C1C.checked}
+				
+				let C2DT = document.getElementById("C2-DT");
+				let C2C = document.getElementById("C2-C");
+				let C2PR = document.getElementById("C2-PR");
+				var events2Dict = {C2DT:C2DT.checked,C2C:C2C.checked,C2PR:C2PR.checked}
+
+				let C3DP = document.getElementById("C3-DP");
+				let C3PS = document.getElementById("C3-PS");
+				let C3BW = document.getElementById("C3-BW");
+				var events3Dict = {C3DP:C3DP.checked,C3PS:C3PS.checked,C3BW:C3BW.checked}
+
+				let C4MPS = document.getElementById("C4-MPS");
+				let C4FA = document.getElementById("C4-FA");
+				let C4R = document.getElementById("C4-R");
+				var events4Dict = {C4MPS:C4MPS.checked,C4FA:C4FA.checked,C4R:C4R.checked}
+
+				let C5GS = document.getElementById("C5-GS");
+				let C5FP = document.getElementById("C5-FP");
+				var events5Dict = {C5GS:C5GS.checked,C5FP:C5FP.checked}
+
+				let C6GS = document.getElementById("C6-GS");
+				let C6GD = document.getElementById("C6-GD");
+				let C6M = document.getElementById("C6-M");
+				let C6ALL = document.getElementById("C6-All");
+				var events6Dict = {C6GS:C6GS.checked,C6GD:C6GD.checked,C6M:C6M.checked}
+
+				localStorage.setItem("name", name.value);
+				localStorage.setItem("address", address.value);
+				localStorage.setItem("number", number.value);
+				localStorage.setItem("email", email.value);
+				localStorage.setItem("events1", JSON.stringify(events1Dict));
+				localStorage.setItem("events2", JSON.stringify(events2Dict));
+				localStorage.setItem("events3", JSON.stringify(events3Dict));
+				localStorage.setItem("events4", JSON.stringify(events4Dict));
+				localStorage.setItem("events5", JSON.stringify(events5Dict));
+				localStorage.setItem("events6", JSON.stringify(events6Dict));
+
+				console.log(new FormData(form));
+
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => window.location = "success.html")
                 .catch(error => console.error('Error!', error.message))

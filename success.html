@@ -110,6 +110,108 @@
   </head>
   <body>
     
+    <script>
+      let name = localStorage.getItem("name");
+      let address = localStorage.getItem("address");
+      let number = localStorage.getItem("number");
+      let email = localStorage.getItem("email");
+      let events1 = JSON.parse(localStorage.getItem("events1"));
+      let events2 = JSON.parse(localStorage.getItem("events2"));
+      let events3 = JSON.parse(localStorage.getItem("events3"));
+      let events4 = JSON.parse(localStorage.getItem("events4"));
+      let events5 = JSON.parse(localStorage.getItem("events5"));
+      let events6 = JSON.parse(localStorage.getItem("events6"));
+
+
+      console.log(events1);
+      console.log(events2);
+      console.log(events3);
+      console.log(events4);
+      console.log(events5);
+      console.log(events6);
+
+
+      if(events6["C6ALL"] == true)
+      {
+        events6["C6GD"] = false
+        events6["C6GS"] = false
+        events6["C6M"] = false
+      }
+
+      if(events6["C6GD"] == true && events6["C6GS"] == true && events6["C6M"] == true)
+      {
+        events6["C6GD"] = false
+        events6["C6GS"] = false
+        events6["C6M"] = false
+        events6["C6All"] = true
+      }
+
+      let cost = 250;
+      let nevents = 0;
+
+      for(var key in events1)
+      {
+        if(events1[key] == true)
+        {
+          cost += 150;
+          nevents++;
+        }
+      }
+      for(var key in events2)
+      {
+        if(events2[key] == true)
+        {
+          cost += 150;
+          nevents++;
+        }
+      }
+      for(var key in events3)
+      {
+        if(events3[key] == true)
+        {
+          cost += 150;
+          nevents++;
+        }
+      }
+      for(var key in events4)
+      {
+        if(events4[key] == true)
+        {
+          cost += 150;
+          nevents++;
+        }
+      }
+      for(var key in events5)
+      {
+        if(events5[key] == true)
+        {
+          cost += 150;
+          nevents++;
+        }
+      }
+      for(var key in events6)
+      {
+        if(events6[key] == true && key != "C6All")
+        {
+          cost+=500;
+          nevents++;
+        }
+        if(events6[key] == true && key == "C6All")
+        {
+          cost+=1000;
+          nevents+=3;
+        }
+      }
+
+
+      localStorage.clear()
+
+      console.log(cost);
+      console.log(nevents);
+
+    </script>
+
+
     <div class="main">
       <h1>Thank You for registering!</h1>
       <a href="/">Home</a>

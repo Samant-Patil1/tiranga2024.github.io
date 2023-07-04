@@ -432,5 +432,18 @@ body{
   font-size:2vw;
 }
  
+
+
+.transition-fade {
+  transition: 200ms;
+  opacity: 1;
+    transform:translateX(0);
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
   /* #endregion */
   /* #endregion */
