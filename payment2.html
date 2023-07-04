@@ -190,6 +190,8 @@
 			let events5 = JSON.parse(localStorage.getItem("events5"));
 			let events6 = JSON.parse(localStorage.getItem("events6"));
 
+			if(name == null)
+				window.location = "/"
 
 			console.log(events1);
 			console.log(events2);
@@ -271,9 +273,6 @@
 				}
 			}
 
-
-			localStorage.clear()
-
 			console.log(cost);
 			console.log(nevents);
 
@@ -289,7 +288,7 @@
             form.addEventListener ('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "https://eshsrtiranga.github.io/reg-events")
+                .then(response => window.location = "/success.html")
                 .catch(error => console.error('Error!', error.message))
             })
             
