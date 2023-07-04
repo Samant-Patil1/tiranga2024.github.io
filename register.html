@@ -192,6 +192,21 @@
 				let C6ALL = document.getElementById("C6-All");
 				var events6Dict = {C6GS:C6GS.checked,C6GD:C6GD.checked,C6M:C6M.checked, C6ALL:C6ALL.checked}
 
+				if(events6Dict["C6ALL"] == true)
+				{
+					events6Dict["C6GD"] = false
+					events6Dict["C6GS"] = false
+					events6Dict["C6M"] = false
+				}
+
+				if(events6Dict["C6GD"] == true && events6Dict["C6GS"] == true && events6Dict["C6M"] == true)
+				{
+					events6Dict["C6GD"] = false
+					events6Dict["C6GS"] = false
+					events6Dict["C6M"] = false
+					events6Dict["C6ALL"] = true
+				}
+
 				localStorage.setItem("name", name.value);
 				localStorage.setItem("address", address.value);
 				localStorage.setItem("number", number.value);
