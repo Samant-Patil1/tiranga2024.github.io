@@ -161,7 +161,7 @@
 				<p id = "Cost"></p>
 
 				<p id = "Events"></p>
-				<input placeholder="Transaction ID" type="Text" name="Transaction ID" class="Transaction" required>
+				<input id = "Transaction" placeholder="Transaction ID" type="Text" name="Transaction ID" class="Transaction" required>
 
 
 			</div>
@@ -273,6 +273,9 @@
 				}
 			}
 
+			localStorage.setItem('Cost', cost)
+			localStorage.setItem('No. of Events', nevents)
+
 			console.log(cost);
 			console.log(nevents);
 
@@ -282,14 +285,13 @@
 			costPara.innerHTML = "Cost: Rs."+cost;
 			eventsPara.innerHTML = "Number of events choosen: "+nevents
 
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbydZR8oReb66JK_Z6arOBeXaMt5fjd8FZE3iVKKpshAx5Gp25ye6BCj2O80Z46ruB3czQ/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener ('submit', e => {
               e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "/success.html")
-                .catch(error => console.error('Error!', error.message))
+			  localStorage.setItem("Transaction ID",(document.getElementById("Transaction").value));
+              window.location = "success.html"
             })
             
           </script>

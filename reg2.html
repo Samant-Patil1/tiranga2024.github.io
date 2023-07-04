@@ -123,7 +123,7 @@
 	<div id = "cat5" class="dropdown">
 		<button id = "c5b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
-		<input id = "C5-GS" class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Voice Of India - Rs. 150<br>
+		<input id = "C5-D" class = "checkBox" name = "C5-Declamation" type="checkbox" value="Yes"> Voice Of India - Rs. 150<br>
 		<input id = "C5-FP" class = "checkBox" name = "C5-Face Painting" type="checkbox" value="Yes"> Living Art Work - Rs. 150<br>
 		</div>
 
@@ -182,9 +182,9 @@
 				let C4R = document.getElementById("C4-R");
 				var events4Dict = {C4MPS:C4MPS.checked,C4FA:C4FA.checked,C4R:C4R.checked}
 
-				let C5GS = document.getElementById("C5-GS");
+				let C5D = document.getElementById("C5-D");
 				let C5FP = document.getElementById("C5-FP");
-				var events5Dict = {C5GS:C5GS.checked,C5FP:C5FP.checked}
+				var events5Dict = {C5D:C5D.checked,C5FP:C5FP.checked}
 
 				let C6GS = document.getElementById("C6-GS");
 				let C6GD = document.getElementById("C6-GD");
@@ -203,11 +203,7 @@
 				localStorage.setItem("events5", JSON.stringify(events5Dict));
 				localStorage.setItem("events6", JSON.stringify(events6Dict));
 
-				console.log(new FormData(form));
-
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location = "payment2.html")
-                .catch(error => console.error('Error!', error.message))
+              window.location = "payment2.html"
             })
 
 			
