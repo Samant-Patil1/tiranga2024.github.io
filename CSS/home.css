@@ -239,7 +239,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 @media (max-width: 800px){
   .litfest{
     flex-direction: column;
-    height: 60vh;
+    height: 50vh;
   }
   .litfest .textinsecond{
     padding: 0;
@@ -452,7 +452,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
       
 @media (max-width: 850px){
   .tiranga{
-    margin-top: 190vh;
+    margin-top: 150vh;
   }
   .tiranga .textindiv h3{
     padding-top: 30px;
