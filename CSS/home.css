@@ -226,13 +226,15 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 @media (max-width: 800px){
   .litfest{
     flex-direction: column;
-    height: 92vh;
+    height: 60vh;
   }
   .litfest .textinsecond{
     padding: 0;
   }
 
   .litfest .textinsecond h2{
+    align-items: center;
+    font-size: 15px;
     margin: 1vw;
   }
 
@@ -247,7 +249,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     text-align: center;
     line-height: 20px;
-    margin: auto;
+    /* margin: auto; */
     padding: 0 30px;
   }
   .litfest .textinsecond a{
