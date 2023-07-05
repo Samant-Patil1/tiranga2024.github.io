@@ -146,23 +146,36 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
   }
   .header .text{
+    
+    margin-top: 100px;
     top: 30%;
   }
   .header .text img{
     width: 50px;
   }
   .header .text h1{
+
     padding-bottom: 22px;
     font-size: 28px;
   }
   .header .text h3{
-    font-size: 15px;
+    font-weight: 900;
+    font-size: 25px;
   }
   .header .text a{
     font-size: 10px;
   }
+  .container{
+    margin-top: -80px;
+  }
+  .container .time-text h1{
+    font-size: 40px;
+  }
+  .container a{
+    font-size: 30px;
+  }
+  
 }
-
 
 
 .litfest{
