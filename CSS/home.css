@@ -72,7 +72,7 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
     font-family: P-Light;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("Resources/Images/homepage-old2.png");
+    background-image: linear-gradient(rgba(4, 9, 10, 0.5), rgba(4, 9, 10, 0.5)) , url("https://eshsrtiranga.github.io/Resources/Images/homepage-old2.png");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
