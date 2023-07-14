@@ -187,6 +187,8 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   position: absolute;
   top: 100vh;
+  background:url("/Resources/Images/We_are_currently_making_some_improvements_to_our_website.png");
+  background-size: 100%;
 }
 
 .gallery{
@@ -195,8 +197,6 @@ font-family: P-Light,Verdana, Geneva, Tahoma, sans-serif;
 
 .textinsecond{
 
-  background:url("/Resources/Images/We_are_currently_making_some_improvements_to_our_website.png");
-  background-size:100% ;
   margin-top: 3.4vw;
   margin-left:0%;
   font-size:2.2vw
