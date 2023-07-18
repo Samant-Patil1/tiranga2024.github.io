@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "icon" href = "Resources/Images/eurologo.png">
 	<link rel = "stylesheet" href = "CSS/reg.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 	<style>
 
 		@keyframes fadeIn {
@@ -135,6 +136,12 @@
 				font-family: P-Light;
 				animation: fadeIn 1.4;
 			}
+
+			.qrcode{
+				display:inline-block;
+				overflow: hidden;
+				//pointer-events: none;
+			}
 		
 		</style>
 
@@ -157,7 +164,7 @@
 		<form method="POST" name="google-sheet">
 
 			<div>
-				<img src="QR Code Tiranga Event.jpg.jpeg" alt="Payment QR code" width="350" height="350">
+				<div class = "qrcode" id="qrcode"></div>
 				<p id = "Cost"></p>
 
 				<p id = "Events"></p>
@@ -176,6 +183,9 @@
 		
 	</div>
 
+	<script>
+        
+    </script>
 
 	<script>
 
@@ -199,9 +209,6 @@
 			console.log(events4);
 			console.log(events5);
 			console.log(events6);
-
-
-			
 
 			let cost = 250;
 			let nevents = 0;
@@ -260,8 +267,15 @@
 				}
 			}
 
-			localStorage.setItem('Cost', cost)
-			localStorage.setItem('No. of Events', nevents)
+			var qrcode = new QRCode("qrcode",{
+			text: "upi://pay?pn={payeename}&pa={payeeaddress(vpa)}&cu=INR&am="+cost,
+			width: 256,
+			height: 256,
+			colorDark : "#000000",
+			colorLight : "#ffffff",
+			correctLevel : QRCode.CorrectLevel.H
+			}
+			);
 
 			console.log(cost);
 			console.log(nevents);

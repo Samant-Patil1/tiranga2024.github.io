@@ -122,15 +122,70 @@
       let events5 = JSON.parse(localStorage.getItem("events5"));
       let events6 = JSON.parse(localStorage.getItem("events6"));
       let transactionID = localStorage.getItem("Transaction ID");
-      let nevents = localStorage.getItem("No. of Events");
-      let cost = localStorage.getItem("Cost")
       
-      var events1Dict = {C1DT:"C1-Dress up and Talk", C1C:"C1-Colouring"}
-      var events2Dict = {C2DT:"C2-Dress up and Talk",C2C:"C2-Colouring",C2PR:"C2-Poem Recitation"}
-      var events3Dict = {C3DP:"C3-Drawn and Painting",C3PS:"C3-Picture Speak",C3BW:"C3-Best of Waste"}
-      var events4Dict = {C4MPS:"C4-Monument Pencil Sketching",C4FA:"C4-Flower Arrangement",C4R:"C4-Rangoli"}
-      var events5Dict = {C5D:"C5-Declamation",C5FP:"C5-Face Painting"}
-      var events6Dict = {C6GS:"C6-Group Song",C6GD:"C6-Group Dance",C6M:"C6-Mime", C6ALL:"C6-All"}
+      let cost = 250;
+			let nevents = 0;
+
+			for(var key in events1)
+			{
+				if(events1[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events2)
+			{
+				if(events2[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events3)
+			{
+				if(events3[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events4)
+			{
+				if(events4[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events5)
+			{
+				if(events5[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events6)
+			{
+				if(events6[key] == true && key != "C6ALL")
+				{
+				cost+=500;
+				nevents++;
+				}
+				if(events6[key] == true && key == "C6ALL")
+				{
+				cost+=1000;
+				nevents+=3;
+				}
+			}
+      
+      var events1Dict = {C1DT:"C1-Revolter's Memoir", C1C:"C1-Splurge of Hue"}
+      var events2Dict = {C2DT:"C2-Revolter's Memoir",C2C:"C2-Splurge of Hue",C2PR:"C2-Nationalist Versifier"}
+      var events3Dict = {C3DP:"C3-Brushing Strokes Of Nationalism",C3PS:"C3-Communicate Your Power of Speech",C3BW:"C3-Treasures From Trash"}
+      var events4Dict = {C4MPS:"C4-Sketching History",C4FA:"C4-Blossoms Of Freedom",C4R:"C4-Colour Symphony On The Floor"}
+      var events5Dict = {C5D:"C5-Voice Of India",C5FP:"C5-Living Art Work"}
+      var events6Dict = {C6GS:"C6-Unity Of Rhythm",C6GD:"C6-Trance by Dance",C6M:"C6-Expressive Silence", C6ALL:"C6-All"}
 
 
       if(transactionID == null)
