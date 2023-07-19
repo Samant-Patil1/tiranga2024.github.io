@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/help.css">
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
     <link rel="icon" href="Resources/Images/eurologo.png">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <title>Contact us</title>
   </head>
@@ -142,5 +143,24 @@
 
     <section class="footer">
     </section>
+
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+        Host: "smtp.gmail.com",
+        Username : "<sender’s email address>",
+        Password : "<email password>",
+        To : '<recipient’s email address>',
+        From : "<sender’s email address>",
+        Subject : "<email subject>",
+        Body : "<email body>",
+        }).then(
+          message => alert("mail sent successfully")
+        );
+      }
+  </script>
+
+<button onclick="">
+
   </body>
 </html>
