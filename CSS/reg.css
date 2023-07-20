@@ -20,8 +20,10 @@
             100% {opacity: 1;}
          }
 
-	.page {
 
+	.page {
+      padding-left:2vw;
+      padding-right:2vw;
 			background-repeat:no-repeat;
 			background-size:100% 100%;
 		}
@@ -29,7 +31,8 @@
 
 body{
 	user-select:none;
-    font-family: P-Light;
+	font-family: P-Light;
+	background-color: black;
 	color:white;
 	background-image: url("/Resources/kathakaliblack.jpg");
 	height: 100%;
@@ -45,30 +48,26 @@ input{
 	.centre{
 		border-radius:10vw;
 		width:50%;
-		margin-bottom: 20vw;
+		margin-bottom: 5vw;
 		display: inline-block;
 		text-align: center;
 		margin-top: 5vw;
 		align-items: center;
 		flex-direction: column;
 		background: rgba(26, 26, 26, 0.97);
-			
-
 		box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
 		animation: fadeIn 3.5s;
 	}
 
 	.logo{
-
 		height: 10vw;
 		width: 10vw;
 		margin-top: 2.5vw;
 		animation: fadeIn 2.5s;
-
 	}
 
 	.number{
-
+    text-align: center;
 		height: 2vw;
 		width: 25vw;
 		margin-top: 2vw;
@@ -86,17 +85,17 @@ input{
 	.submitbutton{
 		font-size:1.4vw;
 		margin-top: 3vw;
-        margin-bottom: 4.5vw;
-        padding: 1vw;
-        width: 15vw;
-        height: 5vw;
-        border: none;
-        border-radius: 10vw;
-        color: #1A1A1A;
-        background-color: white;
-        animation: fadeIn 0.5s;
-        transition: color 1s, background-color 1s;
-        transition: all 0.5s;
+		margin-bottom: 4.5vw;
+		padding: 1vw;
+		width: 15vw;
+		height: 5vw;
+		border: none;
+		border-radius: 10vw;
+		color: #1A1A1A;
+		background-color: white;
+		animation: fadeIn 0.5s;
+		transition: color 1s, background-color 1s;
+		transition: all 0.5s;
 	}
 
 	.submitbutton:hover{
@@ -111,6 +110,7 @@ input{
 	}
 
 	.School{
+		text-align: center;
 		display: inline;
 		width: 25vw;
 		margin-top: 2vw;
@@ -125,16 +125,17 @@ input{
 	}
 
 		.Address{
-		width: 25vw;
-		margin-top: 2vw;
-		margin-bottom: 1vw;
-		outline: none;
-		border-radius: 4vw;
-		background: transparent;
-		padding: 1vw;
-		font-size: 1.3vw;
-		color: white;
-		animation: fadeIn 1.5s;
+			text-align: center;
+			width: 25vw;
+			margin-top: 2vw;
+			margin-bottom: 1vw;
+			outline: none;
+			border-radius: 4vw;
+			background: transparent;
+			padding: 1vw;
+			font-size: 1.3vw;
+			color: white;
+			animation: fadeIn 1.5s;
 	}
 
 	.name{
@@ -216,4 +217,46 @@ select{
     height:3vw;
     border: none;
     background-color: white;
+}
+
+
+@media (max-width:840px){
+	.centre{
+		font-size:3vw;
+		width:100%;
+	}
+	.School{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	.Address{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	.number{
+		font-size:3vw;
+		width: 50vw;
+		height:5vw;
+	}
+	
+	.logo{
+		 width: 15vw;
+		height:15vw;
+	}
+	
+	.name{
+		font-size: 6vw;
+	}
+	
+	.dropbtn{
+		width:16vw;
+		height:7vw;
+		font-size: 2vw;
+	}
+	.checkBox{
+		width:4vw;
+		height:4vw;
+	}
 }

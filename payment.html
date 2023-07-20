@@ -4,167 +4,92 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link rel = "icon" href = "Resources/Images/eurologo.png">
 	<link rel = "stylesheet" href = "CSS/reg.css">
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	
 	<style>
+	@keyframes fadeIn {
+	0% {opacity: 0;}
+	from{
 
-		@keyframes fadeIn {
-					0% {opacity: 0;}
-					from{
-		
-						transform: translateY(100px);
-		
-					}
-		
-					to{
-		
-						transform: translateY(0px);
-		
-					}
-					100% {opacity: 1;}
-				 }
-		
+		transform: translateY(100px);
+
+	}
+
+	to{
+
+		transform: translateY(0px);
+
+	}
+	100% {opacity: 1;}
+	}
 
 
-				 body{
-					user-select:none;
-					font-family: P-Light;
-					color:white;
-					background-image: url("https://eshsrtiranga.github.io/Resources/Images/taj-mahal-agra-india.jpg");
-					text-align:center;
-					font-size:1.7vw;
-				}
 
+	body{
+		background-image: url("https://eshsrtiranga.github.io/Resources/Images/taj-mahal-agra-india.jpg");
+	}
 
-			.page {
-		
-					background-repeat:no-repeat;
-					background-size:cover;
-		
-				}
-		
-		
-			
-				.centre{
-					border-radius:10vw;
-					width:50%;
-					margin-bottom: 20vw;
-					display: inline-block;
-					text-align: center;
-					margin-top: 5vw;
-					align-items: center;
-					flex-direction: column;
-					background: rgba(26, 26, 26, 0.97);
-						
+	.Transaction{
+		text-align: center;
+		display: inline;
+		width: 25vw;
+		margin-top: 2vw;
+		margin-bottom: 1vw;
+		outline: none;
+		border-radius: 4vw;
+		background: transparent;
+		padding: 1vw;
+		font-size: 1.3vw;
+		color: white;
+		animation: fadeIn 1.5s;
+	}
 
-					box-shadow: 0 0 1vw rgba(0, 0, 0, 2);
-					animation: fadeIn 3.5s;
-				}
-		
-			.logo{
-		
-				height: 100px;
-				width: 100px;
-				margin-top: 25px;
-				animation: fadeIn 2.5s;
-		
-			}
-		
-			.number{
-		
-				height: 20px;
-				width: 200px;
-				margin-top: 20px;
-				margin-left: 60px;
-				margin-right: 60px;
-				width: 200px;
-				outline: none;
-				border-radius: 40px;
-				background: transparent;
-				padding: 10px;
-				font-size: 13px;
-				color: white;
-				animation: fadeIn 1s;
-		
-			}
-		
-			.submitbutton{
-				font-size:1.4vw;
-				margin-top: 3vw;
-				margin-bottom: 4.5vw;
-				padding: 1vw;
-				width: 15vw;
-				height: 5vw;
-				border: none;
-				border-radius: 10vw;
-				color: #1A1A1A;
-				background-color: white;
-				animation: fadeIn 0.5s;
-				transition: color 1s, background-color 1s;
-				transition: all 0.5s;
-			}
-		
-			.submitbutton:hover{
-				color: white;
-				background-color: #1A1A1A;
-				border:.1vw solid white;
-				cursor: pointer;
-			}
+	.qrcode{
+		display:inline-block;
+		overflow: hidden;
+		pointer-events: all;
+		cursor:pointer;
+		user-select: all;
+		background-color: white;
+		padding:2vw;
+	}
 
-			.submitbutton:active{
-				opacity: 0.6;
-			}
+	@media (max-width:840px){
 		
-			.Transaction{
-				display: inline;
-				width: 25vw;
-				margin-top: 2vw;
-				margin-bottom: 1vw;
-				outline: none;
-				border-radius: 4vw;
-				background: transparent;
-				padding: 1vw;
-				font-size: 1.3vw;
-				color: white;
-				animation: fadeIn 1.5s;
-			}
+		.logo{
+			width:15vw;
+			height:15vw;
+		}
 		
-			.name{
-				font-size:4vw;
-				color: white;
-				font-family: P-Light;
-				animation: fadeIn 1.4;
-			}
-
-			.qrcode{
-				display:inline-block;
-				overflow: hidden;
-				pointer-events: all;
-				cursor:pointer;
-				user-select: all;
-				background-color: white;
-				padding:1vw;
-			}
+		.subhead{
+			font-weight: normal;
+		}
 		
-			@media (max-width:840px){
-				.centre{
-					width:100%;
-					font-size: 3vw;
-				}
+		.name{
+			font-size: 7vw;
+		}
+		
+		.Transaction{
+			font-size:3vw;
+			width: 40vw;
+			height:5vw;
+		}
+		
+		.submitbutton{
+			width: 16vw;
+			font-size: 2vw;
+			height:6vw;
+		}
 
-				.Transaction{
-					font-size:3vw;
-					width: 40vw;
-					height:5vw;
-				}
-
-				.qrcode{
-					padding: 2vw;
-				}
-			}
-
-		</style>
+		.qrcode{
+			padding: 2vw;
+		}
+	}
+	</style>
 
 
 	<title>Register</title>
@@ -190,9 +115,9 @@
 					
 				</div>
 
-				<p id = "Cost"></p>
+				<p id = "Cost">Cost: </p>
 
-				<p id = "Events">Number of Events chosen</p>
+				<p id = "Events">Number of Events chosen: </p>
 				<input id = "Transaction" placeholder="Transaction ID" type="Text" name="Transaction ID" class="Transaction" required>
 
 
@@ -287,20 +212,13 @@
 
 			var qrcode = new QRCode("qrcode",{
 			text: "upi://pay?pn=EuroSchool HSR&pa=s.muniraj009-1@okhdfcbank&cu=INR&am="+cost,
-			width: screen.width>412?412:screen.width-50,
-			height: screen.width>412?412:screen.width-50,
+			width: screen.width>412?412:screen.width-(screen.width/5),
+			height: screen.width>412?412:screen.width-(screen.width/5),
 			colorDark : "#000000",
 			colorLight : "#ffffff",
 			correctLevel : QRCode.CorrectLevel.H,
 			}
 			);
-
-			
-			var qrCodeSrc = document.getElementById("qrcode").getElementsByTagName("img")[0];
-			const HREF = URL.createObjectURL(qrCodeSrc);
-			document.getElementById("qrdownload").href = HREF;
-			console.log(qrCodeSrc);
-			console.log("Changed");
 
 			let costPara = document.getElementById("Cost");
 			let eventsPara = document.getElementById("Events")
