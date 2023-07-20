@@ -167,7 +167,7 @@
 				<div class = "qrcode" id="qrcode"></div>
 				<p id = "Cost"></p>
 
-				<p id = "Events"></p>
+				<p id = "Events">Number of Events chosen</p>
 				<input id = "Transaction" placeholder="Transaction ID" type="Text" name="Transaction ID" class="Transaction" required>
 
 
@@ -284,7 +284,7 @@
 			let eventsPara = document.getElementById("Events")
 
 			costPara.innerHTML = "Cost: Rs."+cost;
-			eventsPara.innerHTML = "Number of events choosen: "+nevents
+			eventsPara.innerHTML = "Number of events chosen: "+nevents
 
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
             const form = document.forms['google-sheet']
