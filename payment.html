@@ -140,9 +140,30 @@
 			.qrcode{
 				display:inline-block;
 				overflow: hidden;
-				pointer-events: none;
+				pointer-events: all;
+				cursor:pointer;
+				user-select: all;
+				background-color: white;
+				padding:1vw;
 			}
 		
+			@media (max-width:840px){
+				.centre{
+					width:100%;
+					font-size: 3vw;
+				}
+
+				.Transaction{
+					font-size:3vw;
+					width: 40vw;
+					height:5vw;
+				}
+
+				.qrcode{
+					padding: 2vw;
+				}
+			}
+
 		</style>
 
 
@@ -165,7 +186,10 @@
 		<form method="POST" name="google-sheet">
 
 			<div>
-				<div class = "qrcode" id="qrcode"></div>
+				<div class = "qrcode" id="qrcode">
+					
+				</div>
+
 				<p id = "Cost"></p>
 
 				<p id = "Events">Number of Events chosen</p>
@@ -203,13 +227,6 @@
 
 			if(name == null)
 				window.location = "/"
-
-			console.log(events1);
-			console.log(events2);
-			console.log(events3);
-			console.log(events4);
-			console.log(events5);
-			console.log(events6);
 
 			let cost = 250;
 			let nevents = 0;
@@ -270,16 +287,20 @@
 
 			var qrcode = new QRCode("qrcode",{
 			text: "upi://pay?pn=EuroSchool HSR&pa=s.muniraj009-1@okhdfcbank&cu=INR&am="+cost,
-			width: 412,
-			height: 412,
+			width: screen.width>412?412:screen.width-50,
+			height: screen.width>412?412:screen.width-50,
 			colorDark : "#000000",
 			colorLight : "#ffffff",
-			correctLevel : QRCode.CorrectLevel.H
+			correctLevel : QRCode.CorrectLevel.H,
 			}
 			);
 
-			console.log(cost);
-			console.log(nevents);
+			
+			var qrCodeSrc = document.getElementById("qrcode").getElementsByTagName("img")[0];
+			const HREF = URL.createObjectURL(qrCodeSrc);
+			document.getElementById("qrdownload").href = HREF;
+			console.log(qrCodeSrc);
+			console.log("Changed");
 
 			let costPara = document.getElementById("Cost");
 			let eventsPara = document.getElementById("Events")
