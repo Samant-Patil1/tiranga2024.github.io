@@ -31,6 +31,75 @@ body{
   font-family: P-Light;
 }
 
+.bxl-instagram:before {
+    content: "\ee93";
+}
+.bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bx {
+    margin: 0 15px;
+    color: rgb(255, 237, 215);
+    cursor: pointer;
+    padding: 2px 0;
+    font-size: 30px;
+}
+* {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.footer a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: rgb(0, 0, 0);
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.footer {
+    background: var(--bgcolour);
+    font-family: "Roboto";
+    width: 100%;
+    /* height: 13vh; */
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 237, 215);
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+:root {
+    /* --bgcolour: rgba(38, 9, 4, 0.476); */
+    --bgcolour: #361106;
+    --textcolour: rgb(255, 237, 215);
+    --coloronhover: rgb(255, 237, 215);
+}
+:root {
+    --brown: #5b1d0b;
+    --darkerbrown: #361106;
+    --scrollbarthumbcolour: rgb(164, 164, 164);
+}
+
+
 @keyframes hanimation {
   from {
     opacity: 0;
