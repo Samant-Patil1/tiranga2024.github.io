@@ -162,10 +162,12 @@
 	</div>
 
 <script>
+	<script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
   const form = document.forms['submit-to-google-sheet']
 
-  e.preventDefault()
+  form.addEventListener('submit', e => {
+  				e.preventDefault()
 				let name = document.getElementById("School Name");
 				let address = document.getElementById("Address");
 				let number = document.getElementById("Mobile Number");
@@ -230,6 +232,7 @@
 
               window.location = "payment.html"
             })
+	
 
 			
 	  let sidebar = document.querySelector(".sidebar");
