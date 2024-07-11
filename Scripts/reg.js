@@ -9,9 +9,6 @@
       .catch(error => console.error('Error!', error.message))
   })
 
-  
-
-/*
 let SPREADSHEET_ID = "1pXMS57RZCVG4DlA-i8xAI98ac1_FEwrTHv5s3M3IAGQ";
 let CLIENT_ID = "430677260245-h0e518b61dgtflth8ji4ahibi9gai9kb.apps.googleusercontent.com";
 let API_KEY = "AIzaSyDfZns_bgskUq5oKDg2y3GsnAGbMa03mRQ";
@@ -75,4 +72,4 @@ loginForm.addEventListener("submit", (e) => {
     console.log(events4Dict);
     console.log(events5Dict);
   });
-*/
+
