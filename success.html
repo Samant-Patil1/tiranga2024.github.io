@@ -125,69 +125,199 @@
       let events6 = JSON.parse(localStorage.getItem("events6"));
       let transactionID = localStorage.getItem("Transaction ID");
       
-      let cost = 250;
+      let cost = 0;
 			let nevents = 0;
 
 			for(var key in events1)
 			{
-				if(events1[key] == true)
+				if(events1[key] == true && key =="C1PD")
 				{
-				cost += 150;
+				cost += 100;
+				nevents++;
+				}
+				if(events1[key] == true && key =="C1PR")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events1[key] == true && key =="C1RR")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events1[key] == true && key =="C1DD")
+				{
+				cost += 100;
 				nevents++;
 				}
 			}
 			for(var key in events2)
 			{
-				if(events2[key] == true)
+				if(events2[key] == true && key =="C2DT")
 				{
-				cost += 150;
+				cost += 100;
+				nevents++;
+				}
+				if(events2[key] == true && key =="C2BW")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events2[key] == true && key =="C2SS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events2[key] == true && key =="C2ST")
+				{
+				cost += 100;
 				nevents++;
 				}
 			}
 			for(var key in events3)
 			{
-				if(events3[key] == true)
+				if(events3[key] == true && key =="C3SMM")
 				{
 				cost += 150;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3BOW")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3PM")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3D")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3SOS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3PS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events3[key] == true && key =="C3FP")
+				{
+				cost += 100;
 				nevents++;
 				}
 			}
 			for(var key in events4)
 			{
-				if(events4[key] == true)
+				if(events4[key] == true && key =="C4WM")
 				{
-				cost += 150;
+				cost += 200;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4MM")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4PM")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4D")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4SS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4PS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events4[key] == true && key =="C4FP")
+				{
+				cost += 100;
 				nevents++;
 				}
 			}
 			for(var key in events5)
 			{
-				if(events5[key] == true)
+				if(events5[key] == true && key =="C5WM")
 				{
-				cost += 150;
+				cost += 200;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5MM")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5MaM")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5D")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5JAM")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5SS")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5Q")
+				{
+				cost += 200;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5HTP")
+				{
+				cost += 100;
+				nevents++;
+				}
+				if(events5[key] == true && key =="C5ST")
+				{
+				cost += 200;
 				nevents++;
 				}
 			}
 			for(var key in events6)
 			{
-				if(events6[key] == true && key != "C6ALL")
+				if(events6[key] == true && key != "C6WAI")
 				{
-				cost+=500;
+				cost+=350;
 				nevents++;
 				}
-				if(events6[key] == true && key == "C6ALL")
+				if(events6[key] == true && key == "C6WAI")
 				{
-				cost+=1000;
-				nevents+=3;
+				cost+=200;
+				nevents++;
 				}
 			}
       
-      var events1Dict = {C1DT:"C1-Revolter's Memoir", C1C:"C1-Splurge of Hue"}
-      var events2Dict = {C2DT:"C2-Revolter's Memoir",C2C:"C2-Splurge of Hue",C2PR:"C2-Nationalist Versifier"}
-      var events3Dict = {C3DP:"C3-Brushing Strokes Of Nationalism",C3PS:"C3-Communicate Your Power of Speech",C3BW:"C3-Treasures From Trash"}
-      var events4Dict = {C4MPS:"C4-Sketching History",C4FA:"C4-Blossoms Of Freedom",C4R:"C4-Colour Symphony On The Floor"}
-      var events5Dict = {C5D:"C5-Voice Of India",C5FP:"C5-Living Art Work"}
-      var events6Dict = {C6GS:"C6-Unity Of Rhythm",C6GD:"C6-Trance by Dance",C6M:"C6-Expressive Silence", C6ALL:"C6-All"}
+      var events1Dict = {C1DD:"C1-Dress up Day- Famous Personalities", C1PD:"C1-Play Dough", C1PR:"C1-Poem Recitation", C1RR:"C1-Reading Relay"}
+      var events2Dict = {C2DT:"C2-Story Narration",C2BW:"C2-Best of Waste",C2SS:"C2-Solo Singing",C2ST:"C2-Show & Talk"}
+      var events3Dict = {C3SMM:"C3-C3-Stop Motion Movie",C3BOW:"C3-Best of Waste",C3PM:"C3-Poster Making",C3D:"C3-Dance",C3SOS:"C3-Solo Singing",C3PS:"C3-Pick and Speak",C3FP:"C3-Face Painting"}
+      var events4Dict = {C4WM:"C4-C4-Working Model",C4MM:"C4-Movie Making",C4PM:"C4-Poster Making",C4D:"C4-Dance",C4SS:"C4-Solo Singing",C4PS:"C4-Pick And Speak",C4FP:"C4-Face Painting"}
+      var events5Dict = {C5WM:"C5-Working Model",C5MM:"C5-Movie Making",C5MaM:"C5-Mad Marketing",C5D:"C5-Declamation",C5JAM:"C5-JAM",C5S:"C5-Solo Singing",C5Q:"C5-Quiz",C5HTP:"C5-HTML Template Preparation",C5ST:"C5-Shark Tank"}
+      var events6Dict = {C6D:"C6-Dance",C6B:"C6-Band",CWAI:"C6-Who am I"}
 
 
       if(transactionID == null)
@@ -249,7 +379,7 @@
 
     <div class="main">
       <h1>Thank You for registering!</h1>
-      <a href="/tiranga2024.github.io">Home</a>
+      <a href="/tiranga2024.github.io">Regirster for more</a>
     </div>
 
     
