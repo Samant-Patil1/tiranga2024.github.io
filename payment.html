@@ -107,6 +107,106 @@
 
 		<h1 class="name">Payment</h1>
 	        <h3 class="subhead">Kindly scan the QR code for payment and once the transaction is successful, enter the transaction ID and register.</h3>
+		<script>
+
+		let name = localStorage.getItem("name");
+			let address = localStorage.getItem("address");
+			let number = localStorage.getItem("number");
+			let email = localStorage.getItem("email");
+			let events1 = JSON.parse(localStorage.getItem("events1"));
+			let events2 = JSON.parse(localStorage.getItem("events2"));
+			let events3 = JSON.parse(localStorage.getItem("events3"));
+			let events4 = JSON.parse(localStorage.getItem("events4"));
+			let events5 = JSON.parse(localStorage.getItem("events5"));
+			let events6 = JSON.parse(localStorage.getItem("events6"));
+
+			if(name == null)
+				window.location = "/"
+
+			let cost = 250;
+			let nevents = 0;
+
+			for(var key in events1)
+			{
+				if(events1[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events2)
+			{
+				if(events2[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events3)
+			{
+				if(events3[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events4)
+			{
+				if(events4[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events5)
+			{
+				if(events5[key] == true)
+				{
+				cost += 150;
+				nevents++;
+				}
+			}
+			for(var key in events6)
+			{
+				if(events6[key] == true && key != "C6ALL")
+				{
+				cost+=500;
+				nevents++;
+				}
+				if(events6[key] == true && key == "C6ALL")
+				{
+				cost+=1000;
+				nevents+=3;
+				}
+			}*/
+
+			var qrcode = new QRCode("qrcode",{
+			text: "upi://pay?pn=EuroSchool HSR&pa=s.muniraj009-1@okhdfcbank&cu=INR&am="+cost,
+			width: screen.width>412?412:screen.width-(screen.width/5),
+			height: screen.width>412?412:screen.width-(screen.width/5),
+			colorDark : "#000000",
+			colorLight : "#ffffff",
+			correctLevel : QRCode.CorrectLevel.H,
+			}
+			);
+
+			let costPara = document.getElementById("Cost");
+			let eventsPara = document.getElementById("Events")
+
+			costPara.innerHTML = "Cost: Rs."+cost;
+			eventsPara.innerHTML = "Number of events chosen: "+nevents
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener ('submit', e => {
+              e.preventDefault()
+			  localStorage.setItem("Transaction ID",(document.getElementById("Transaction").value));
+              window.location = "success"
+            })
+            
+          </script>
+
 
 		<form method="POST" name="google-sheet">
 
@@ -135,8 +235,8 @@
 
 	<script>
         
-    </script>
-
+    	</script>
+	
 	<script>
 
 		let name = localStorage.getItem("name");
