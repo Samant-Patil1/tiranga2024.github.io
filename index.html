@@ -52,7 +52,7 @@
 
 		<h1 class="name">EuroSchool HSR</h1>
 
-		<form id = "registerForm" method="GET" name="google-sheet">
+		<form id = "registerForm" method="GET" name="submit-to-google-sheet">
 
 				<input id = "School Name" placeholder="School Name" type="Text" name="School Name" class="School" required>
 
@@ -163,7 +163,7 @@
 
 
 	<script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
+		/*const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
             const form = document.forms['google-sheet']
 
 			
@@ -276,9 +276,27 @@
       else {
         remove_links();
         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-      }}
+      }}*/
+
+	<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
             
 	</script>
+	
 
 </body>
 
