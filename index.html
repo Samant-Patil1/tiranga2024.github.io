@@ -216,21 +216,6 @@
 				let C6B = document.getElementById("C6-B");
 				let C6WAI = document.getElementById("C6-WAI");
 				var events6Dict = {C6D:C6D.checked,C6B:C6B.checked,C6WAI:C6WAI.checked}
-	
-				if(events6Dict["C6ALL"] == true)
-				{
-					events6Dict["C6GD"] = false
-					events6Dict["C6GS"] = false
-					events6Dict["C6M"] = false
-				}
-
-				if(events6Dict["C6GD"] == true && events6Dict["C6GS"] == true && events6Dict["C6M"] == true)
-				{
-					events6Dict["C6GD"] = false
-					events6Dict["C6GS"] = false
-					events6Dict["C6M"] = false
-					events6Dict["C6ALL"] = true
-				}
 
 				localStorage.setItem("name", name.value);
 				localStorage.setItem("address", address.value);
