@@ -146,7 +146,7 @@
 	Grade 6-12
 	<br>
 	<div id = "cat6" class="dropdown">
-		<button id = "c5b" type = "button" class="dropbtn">Events</button>
+		<button id = "c6b" type = "button" class="dropbtn">Events</button>
 		<div class="dropdown-content">
 		<input id = "C6-D" class = "checkBox" name = "C6-Dance" type="checkbox" value="Yes"> Dance - Rs. 350<br>
 		<input id = "C6-B" class = "checkBox" name = "C6-Band" type="checkbox" value="Yes"> Band - Rs. 350<br>
@@ -165,13 +165,131 @@
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
   const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-	window.location = "payment.html"
-  })        
+  e.preventDefault()
+				let name = document.getElementById("School Name");
+				let address = document.getElementById("Address");
+				let number = document.getElementById("Mobile Number");
+				let email = document.getElementById("Email");
+
+				let C1DD = document.getElementById("C1-DD");
+				let C1PD = document.getElementById("C1-PD");
+				let C1PR = document.getElementById("C1-PR");
+				let CRR = document.getElementById("C1-RR");
+				var events1Dict = {C1DD:C1DD.checked, C1PD:C1PD.checked, C1PR:C1PR.checked, CRR:CRR.checked}
+				
+				let C2DT = document.getElementById("C2-DT");
+				let C2BW = document.getElementById("C2-BW");
+				let C2SS = document.getElementById("C2-SS");
+				let C2ST = document.getElementById("C2-ST");
+				var events2Dict = {C2DT:C2DT.checked,C2BW:C2BW.checked,C2SS:C2SS.checked,C2ST:C2ST.checked}
+
+				let C3SMM = document.getElementById("C3-SMM");
+				let C3BOW = document.getElementById("C3-BOW");
+				let C3PM = document.getElementById("C3-PM");
+				let C3D = document.getElementById("C3-D");
+				let C3SOS = document.getElementById("C3-SOS");
+				let C3PS = document.getElementById("C3-PS");
+				let C3FP = document.getElementById("C3-FP");
+				var events3Dict = {C3SMM:C3SMM.checked,C3BOW:C3BOW.checked,C3PM:C3PM.checked,C3D:C3D.checked,C3SOS:C3SOS.checked,C3PS:C3PS.checked,C3FP:C3FP.checked}
+
+				let C4WM = document.getElementById("C4-WM");
+				let C4MM = document.getElementById("C4-MM");
+				let C4PM = document.getElementById("C4-PM");
+				let C4D = document.getElementById("C4-D");
+				let C4SS = document.getElementById("C4-SS");
+				let C4PS = document.getElementById("C4-PS");
+				let C4FP = document.getElementById("C4-FP");
+				var events4Dict = {C4WM:C4WM.checked,C4MM:C4MM.checked,C4PM:C4PM.checked,C4D:C4D.checked,C4SS:C4SS.checked,C4PS:C4PS.checked,C4FP:C4FP.checked}
+
+				let C5WM = document.getElementById("C5-WM");
+				let C5MM = document.getElementById("C5-MM");
+				let C5HTP = document.getElementById("C5-HTP");
+				let C5ST = document.getElementById("C5-ST");
+				let C5MaM = document.getElementById("C5-MaM");
+				let C5D = document.getElementById("C5-D");
+				let C5SS = document.getElementById("C5-SS");
+				let C5JAM = document.getElementById("C5-JAM");
+				let C5Q = document.getElementById("C5-Q");
+				var events5Dict = {C5WM:C5WM.checked,C5MM:C5MM.checked,C5HTP:C5HTP.checked,C5ST:C5ST.checked,C5MaM:C5MaM.checked,C5D:C5D.checked,C5SS:C5SS.checked,C5JAM:C5JAM.checked,C5Q:C5Q.checked}
+
+				let C6D = document.getElementById("C6-D");
+				let C6B = document.getElementById("C6-B");
+				let C6WAI = document.getElementById("C6-WAI");
+				var events6Dict = {C6D:C6D.checked,C6B:C6B.checked,C6WAI:C6WAI.checked}
+	
+				if(events6Dict["C6ALL"] == true)
+				{
+					events6Dict["C6GD"] = false
+					events6Dict["C6GS"] = false
+					events6Dict["C6M"] = false
+				}
+
+				if(events6Dict["C6GD"] == true && events6Dict["C6GS"] == true && events6Dict["C6M"] == true)
+				{
+					events6Dict["C6GD"] = false
+					events6Dict["C6GS"] = false
+					events6Dict["C6M"] = false
+					events6Dict["C6ALL"] = true
+				}
+
+				localStorage.setItem("name", name.value);
+				localStorage.setItem("address", address.value);
+				localStorage.setItem("number", number.value);
+				localStorage.setItem("email", email.value);
+				localStorage.setItem("events1", JSON.stringify(events1Dict));
+				localStorage.setItem("events2", JSON.stringify(events2Dict));
+				localStorage.setItem("events3", JSON.stringify(events3Dict));
+				localStorage.setItem("events4", JSON.stringify(events4Dict));
+				localStorage.setItem("events5", JSON.stringify(events5Dict));
+				localStorage.setItem("events6", JSON.stringify(events6Dict));
+
+              window.location = "payment.html"
+            })
+
+			
+	  let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let links = document.getElementsByClassName("link");
+      let list_items = document.getElementsByTagName("li");
+      const links_array = Array.from(links);
+      const array_list_items = Array.from(list_items);
+
+      window.onload = remove_links;
+
+      function remove_links(){
+        links_array.forEach(element => {
+          element.remove();
+        });
+        // console.log("removed links");
+      }
+
+      function addlinks(){
+        var counter = 0;
+        
+        array_list_items.forEach(element =>{
+          element.appendChild(links_array[counter]);
+          counter += 1;
+        });
+
+        // console.log("added links");
+      }
+
+
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+
+
+      function menuBtnChange() {
+      if(sidebar.classList.contains("open")){
+        addlinks();
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+      }
+      else {
+        remove_links();
+        closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+      }}        
 </script>
 
 
