@@ -139,6 +139,20 @@
 
 	<script>
 
+		let name = localStorage.getItem("name");
+			let address = localStorage.getItem("address");
+			let number = localStorage.getItem("number");
+			let email = localStorage.getItem("email");
+			let events1 = JSON.parse(localStorage.getItem("events1"));
+			let events2 = JSON.parse(localStorage.getItem("events2"));
+			let events3 = JSON.parse(localStorage.getItem("events3"));
+			let events4 = JSON.parse(localStorage.getItem("events4"));
+			let events5 = JSON.parse(localStorage.getItem("events5"));
+			let events6 = JSON.parse(localStorage.getItem("events6"));
+
+			if(name == null)
+				window.location = "/"
+
 			let cost = 250;
 			let nevents = 0;
 
