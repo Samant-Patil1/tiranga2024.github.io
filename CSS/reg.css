@@ -3,6 +3,7 @@
     src: url('https://eshsrtiranga.github.io/fonts/Poppins-Light.woff') format('woff');
   }
 
+
 @keyframes fadeIn {
             0% {opacity: 0;}
             from{
@@ -31,7 +32,9 @@
 body{
 	user-select:none;
 	font-family: P-Light;
-	background-image: url('https://github.com/ESHSRTiranga-team/tiranga2024.github.io/blob/2b15c1ab8cdfab9ecbe0e8b6f91e94f371962337/pexels-stillpixels-3699921.jpg')
+	background-color: black;
+	color:white;
+	background-image: url("/Resources/kathakaliblack.jpg");
 	height: 100%;
 	text-align:center;
 	font-size:1.7vw;
