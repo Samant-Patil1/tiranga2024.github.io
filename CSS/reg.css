@@ -33,7 +33,8 @@ body{
 	font-family: P-Light;
 	background-color: black;
 	color:white;
-	background-image: url("./kathakaliblack.jpg");
+	background-image: url("https://eshsrtiranga.github.io/kathakaliblack.jpg");
+	background-size: cover;
 	height: 100%;
 	text-align:center;
 	font-size:1.7vw;
