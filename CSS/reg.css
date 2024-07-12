@@ -33,7 +33,7 @@ body{
 	font-family: P-Light;
 	background-color: black;
 	color:white;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f1/Kathakalidancer.jpg);
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f1/Kathakalidancer.jpg");
 	background-size: cover;
 	height: 100%;
 	text-align:center;
