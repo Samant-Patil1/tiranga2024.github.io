@@ -368,9 +368,7 @@
 
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
 	     fetch(scriptURL, { method: 'POST', body: formData})
-                .then(response => console.log("Data sent"))
-                .catch(error => console.error('Error!', error.message))
-
+                
       localStorage.clear()
 
 
