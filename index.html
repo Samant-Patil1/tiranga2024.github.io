@@ -149,7 +149,7 @@
 
 	</div>
 				<br>
-				<button class="submitbutton" id = "submitbutton type="submit"  name="submit">Continue</button>
+				<button class="submitbutton" id = "submitbutton" type="submit"  name="submit">Continue</button>
 
 		</form>
 		
@@ -169,32 +169,25 @@
 
 				let C1DD = document.getElementById("C1-DD");
 				let C1PD = document.getElementById("C1-PD");
-				let C1PR = document.getElementById("C1-PR");
-				let CRR = document.getElementById("C1-RR");
-				var events1Dict = {C1DD:C1DD.checked, C1PD:C1PD.checked, C1PR:C1PR.checked, CRR:CRR.checked}
+				var events1Dict = {C1DD:C1DD.checked, C1PD:C1PD.checked}
 				
-				let C2DT = document.getElementById("C2-DT");
-				let C2BW = document.getElementById("C2-BW");
-				let C2SS = document.getElementById("C2-SS");
-				let C2ST = document.getElementById("C2-ST");
-				var events2Dict = {C2DT:C2DT.checked,C2BW:C2BW.checked,C2SS:C2SS.checked,C2ST:C2ST.checked}
+				let C2DT = document.getElementById("C1-PR");
+				let C2BW = document.getElementById("C1-RR");
+				var events2Dict = {C2DT:C2DT.checked,C2BW:C2BW.checked}
 
-				let C3SMM = document.getElementById("C3-SMM");
-				let C3BOW = document.getElementById("C3-BOW");
-				let C3PM = document.getElementById("C3-PM");
-				let C3D = document.getElementById("C3-D");
-				let C3SOS = document.getElementById("C3-SOS");
-				let C3PS = document.getElementById("C3-PS");
-				let C3FP = document.getElementById("C3-FP");
-				var events3Dict = {C3SMM:C3SMM.checked,C3BOW:C3BOW.checked,C3PM:C3PM.checked,C3D:C3D.checked,C3SOS:C3SOS.checked,C3PS:C3PS.checked,C3FP:C3FP.checked}
+				let C3SMM = document.getElementById("C2-DT");
+				let C3BOW = document.getElementById("C2-BW");
+				let C3PM = document.getElementById("C2-SS");
+				let C3D = document.getElementById("C2-ST");
+				var events3Dict = {C3SMM:C3SMM.checked,C3BOW:C3BOW.checked,C3PM:C3PM.checked,C3D:C3D.checked}
 
-				let C4WM = document.getElementById("C4-WM");
-				let C4MM = document.getElementById("C4-MM");
-				let C4PM = document.getElementById("C4-PM");
-				let C4D = document.getElementById("C4-D");
-				let C4SS = document.getElementById("C4-SS");
-				let C4PS = document.getElementById("C4-PS");
-				let C4FP = document.getElementById("C4-FP");
+				let C4WM = document.getElementById("C3-SMM");
+				let C4MM = document.getElementById("C3-BOW");
+				let C4PM = document.getElementById("C3-PM");
+				let C4D = document.getElementById("C3-D");
+				let C4SS = document.getElementById("C3-SOS");
+				let C4PS = document.getElementById("C3-PS");
+				let C4FP = document.getElementById("C3-FP");
 				var events4Dict = {C4WM:C4WM.checked,C4MM:C4MM.checked,C4PM:C4PM.checked,C4D:C4D.checked,C4SS:C4SS.checked,C4PS:C4PS.checked,C4FP:C4FP.checked}
 
 				let C5WM = document.getElementById("C5-WM");
