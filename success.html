@@ -366,9 +366,10 @@
 
       }
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyeckWnOahFHJKPJILOGNVxpzSXB0T8J3jhlkUxiF-74VOPP8B8x735i-iFrnj4FBxakg/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
+	    const form = document.forms['submit-to-google-sheet']
 	     fetch(scriptURL, { method: 'POST', body: formData})
-                
+                localStorage.setItem("Transaction ID",(document.getElementById("Transaction").value));
       localStorage.clear()
 
 
