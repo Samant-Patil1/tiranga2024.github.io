@@ -33,7 +33,7 @@ body{
 	font-family: P-Light;
 	background-color: black;
 	color:white;
-	background-image: url("/Resources/kathakaliblack.jpg");
+	background-image: url("./kathakaliblack.jpg");
 	height: 100%;
 	text-align:center;
 	font-size:1.7vw;
