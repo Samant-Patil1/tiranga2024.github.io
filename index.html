@@ -144,7 +144,6 @@
 		<div class="dropdown-content">
 		<input id = "C6-D" class = "checkBox" name = "Swirl and Twirls" type="checkbox" value="Yes"> Swirls and Twirls - Rs. 350<br>
 		<input id = "C6-B" class = "checkBox" name = "Sovereignity Symphony" type="checkbox" value="Yes"> Sovereignty Symphony - Rs. 350<br>
-		<input id = "C6-WAI" class = "checkBox" name = "Guesstimate" type="checkbox" value="Yes"> Guesstimate - Rs. 200<br>
 		</div>
 
 	</div>
@@ -203,8 +202,7 @@
 
 				let C6D = document.getElementById("C6-D");
 				let C6B = document.getElementById("C6-B");
-				let C6WAI = document.getElementById("C6-WAI");
-				var events6Dict = {C6D:C6D.checked,C6B:C6B.checked,C6WAI:C6WAI.checked}
+				var events6Dict = {C6D:C6D.checked,C6B:C6B.checked}
 
 				localStorage.setItem("name", name.value);
 				localStorage.setItem("address", address.value);
