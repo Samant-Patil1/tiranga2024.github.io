@@ -145,6 +145,14 @@ input{
 		animation: fadeIn 1.4;
 	}
 
+	.link{
+			font-size:4vw;
+			color: white;
+			font-family: P-Light;
+			animation: fadeIn 1.4;
+		}
+
+
 
 	  .dropdown {
     position: relative;
