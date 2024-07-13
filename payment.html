@@ -113,6 +113,10 @@
 			<div>
 				<div class="qrcode" id="qrcode">
 				</div>
+				<br>
+				<h2> OR </h2>
+				<br>
+				<a href = "upi://pay?pn=EuroSchool HSR&pa=s.muniraj009-1@okhdfcbank&cu=INR&am=" id ="Link"><p>Click To Pay</p></a>
 				<p id = "Cost">Cost: </p>
 
 				<p id = "Events">Number of Events chosen: </p>
@@ -350,9 +354,11 @@
 
 			let costPara = document.getElementById("Cost");
 			let eventsPara = document.getElementById("Events")
+			let linkPara = document.getElementById("Link")
 
 			costPara.innerHTML = "Cost: Rs."+cost;
 			eventsPara.innerHTML = "Number of events chosen: "+nevents
+			linkPara.href = "upi://pay?pa=dhanuktp@okaxis&pn=Dhanunjaya%20Pasupuleti&aid=uGICAgIDwl_jIXw&am="+cost;
 
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzslVLM7m-Efftn6rxMt3Xr8oNEVzkgJbcyFacIaaSl68uzdTGiOhGRW9WFHgGbAzAq-g/exec'
             const form = document.forms['submit-to-google-sheet']
